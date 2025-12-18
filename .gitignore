@@ -18,6 +18,9 @@ yarn-error.log*
 pnpm-debug.log*
 *.log
 
+### Lockfiles
+pnpm-lock.yaml
+
 ### OS / Editor
 .DS_Store
 .vscode/
