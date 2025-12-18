@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/studio", "destination": "/" },
+    { "source": "/studio/:path*", "destination": "/" }
+  ]
+}
