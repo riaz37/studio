@@ -1,6 +1,7 @@
 import { defineConfig } from "sanity";
 import { structureTool } from "sanity/structure";
 import { visionTool } from "@sanity/vision";
+import { documentInternationalization } from "@sanity/document-internationalization";
 import { schemaTypes } from "./schemas";
 
 // Sanity Studio uses SANITY_STUDIO_ prefix for environment variables
@@ -29,6 +30,37 @@ export default defineConfig({
         S.list()
           .title("Content")
           .items([
+            // ── Pages ──
+            S.listItem()
+              .title("Home Page")
+              .child(
+                S.documentTypeList("homePage").title("Home Page")
+              ),
+            S.listItem()
+              .title("About Page")
+              .child(
+                S.documentTypeList("aboutPage").title("About Page")
+              ),
+            S.listItem()
+              .title("Service Page")
+              .child(
+                S.documentTypeList("servicePage").title("Service Page")
+              ),
+            S.listItem()
+              .title("Contact Page")
+              .child(
+                S.documentTypeList("contactPage").title("Contact Page")
+              ),
+            S.divider(),
+
+            // ── Collections ──
+            S.listItem()
+              .title("Products")
+              .child(
+                S.documentTypeList("productDocument")
+                  .title("Products")
+                  .defaultOrdering([{ field: "orderRank", direction: "asc" }])
+              ),
             S.listItem()
               .title("Case Studies")
               .child(
@@ -36,9 +68,32 @@ export default defineConfig({
                   .title("Case Studies")
                   .defaultOrdering([{ field: "publishedAt", direction: "desc" }])
               ),
+            S.divider(),
+
+            // ── Site-wide ──
+            S.listItem()
+              .title("Navigation & Footer")
+              .child(
+                S.documentTypeList("navigation").title("Navigation & Footer")
+              ),
           ]),
     }),
     visionTool(),
+    documentInternationalization({
+      supportedLanguages: [
+        { id: "en", title: "English" },
+        { id: "ar", title: "Arabic" },
+      ],
+      schemaTypes: [
+        "caseStudy",
+        "homePage",
+        "aboutPage",
+        "productDocument",
+        "servicePage",
+        "contactPage",
+        "navigation",
+      ],
+    }),
   ],
 
   schema: {
