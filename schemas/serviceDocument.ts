@@ -42,8 +42,9 @@ export default defineType({
         defineField({
             name: "heroSubtitle",
             title: "Hero Subtitle",
-            type: "text",
-            rows: 3,
+            type: "array",
+            of: [{ type: "string" }],
+            description: "Subtitle lines shown in the service hero",
         }),
         defineField({
             name: "heroTagline",
