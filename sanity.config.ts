@@ -42,9 +42,9 @@ export default defineConfig({
                 S.documentTypeList("aboutPage").title("About Page")
               ),
             S.listItem()
-              .title("Service Page")
+              .title("Services")
               .child(
-                S.documentTypeList("servicePage").title("Service Page")
+                S.documentTypeList("serviceDocument").title("Services")
               ),
             S.listItem()
               .title("Contact Page")
@@ -89,7 +89,7 @@ export default defineConfig({
         "homePage",
         "aboutPage",
         "productDocument",
-        "servicePage",
+        "serviceDocument",
         "contactPage",
         "navigation",
       ],

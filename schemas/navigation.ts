@@ -52,6 +52,17 @@ export default defineType({
 
         // ── CTA Button ──
         defineField({
+            name: "ctaTitle",
+            title: "CTA Title (Left Card)",
+            type: "string",
+        }),
+        defineField({
+            name: "ctaSubtitle",
+            title: "CTA Subtitle (Left Card)",
+            type: "text",
+            rows: 2,
+        }),
+        defineField({
             name: "ctaLabel",
             title: "CTA Button Label",
             type: "string",

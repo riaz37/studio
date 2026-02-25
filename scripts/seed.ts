@@ -34,7 +34,7 @@ async function seed() {
         _id: "homePage-en",
         _type: "homePage",
         language: "en",
-        heroTitle: "AI-Powered Solutions For Modern Enterprises",
+        heroTitle: "AI-Powered Solutions / For Modern Enterprises",
         heroSubtitle:
             "Transform your business with intelligent automation, voice-activated systems, and AI agents that drive productivity and innovation",
 
@@ -426,6 +426,8 @@ async function seed() {
             { _key: "fl-1", label: "Privacy Policy", href: "/privacy" },
             { _key: "fl-2", label: "Terms of Service", href: "/terms" },
         ],
+        ctaTitle: "Get in touch",
+        ctaSubtitle: "Have a question or want to partner us? Reach out",
         ctaLabel: "Get Started",
         ctaHref: "/contact",
         copyrightText: "© 2025 ESAP AI. All rights reserved.",

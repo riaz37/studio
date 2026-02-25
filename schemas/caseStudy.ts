@@ -1,4 +1,5 @@
 import { defineType, defineField } from "sanity";
+import { isUniqueAcrossLanguage } from "./lib/isUniqueAcrossLanguage";
 
 export default defineType({
   name: "caseStudy",
@@ -18,6 +19,7 @@ export default defineType({
       options: {
         source: "title",
         maxLength: 96,
+        isUnique: isUniqueAcrossLanguage
       },
       validation: (Rule) => Rule.required(),
     }),

@@ -2,7 +2,7 @@ import caseStudy from "./caseStudy";
 import homePage from "./homePage";
 import aboutPage from "./aboutPage";
 import productDocument from "./productDocument";
-import servicePage from "./servicePage";
+import serviceDocument from "./serviceDocument";
 import contactPage from "./contactPage";
 import navigation from "./navigation";
 
@@ -11,7 +11,7 @@ export const schemaTypes = [
     homePage,
     aboutPage,
     productDocument,
-    servicePage,
+    serviceDocument,
     contactPage,
     navigation,
 ];

@@ -1,4 +1,5 @@
 import { defineType, defineField } from "sanity";
+import { isUniqueAcrossLanguage } from "./lib/isUniqueAcrossLanguage";
 
 export default defineType({
     name: "productDocument",
@@ -23,7 +24,11 @@ export default defineType({
             name: "slug",
             title: "Slug",
             type: "slug",
-            options: { source: "name", maxLength: 96 },
+            options: {
+                source: "name",
+                maxLength: 96,
+                isUnique: isUniqueAcrossLanguage
+            },
             validation: (Rule) => Rule.required(),
         }),
         defineField({

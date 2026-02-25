@@ -29,7 +29,7 @@ async function seedArabic() {
         _id: "homePage-ar",
         _type: "homePage",
         language: "ar",
-        heroTitle: "حلول مدعومة بالذكاء الاصطناعي للمؤسسات الحديثة",
+        heroTitle: "حلول مدعومة بالذكاء الاصطناعي / للمؤسسات الحديثة",
         heroSubtitle:
             "حوّل أعمالك من خلال الأتمتة الذكية والأنظمة المفعّلة بالصوت ووكلاء الذكاء الاصطناعي التي تعزز الإنتاجية والابتكار",
 
@@ -421,6 +421,8 @@ async function seedArabic() {
             { _key: "fl-1", label: "سياسة الخصوصية", href: "/privacy" },
             { _key: "fl-2", label: "شروط الخدمة", href: "/terms" },
         ],
+        ctaTitle: "تواصل معنا",
+        ctaSubtitle: "هل لديك سؤال أو ترغب في الشراكة معنا؟ تواصل معنا",
         ctaLabel: "ابدأ الآن",
         ctaHref: "/contact",
         copyrightText: "© 2025 ESAP AI. جميع الحقوق محفوظة.",

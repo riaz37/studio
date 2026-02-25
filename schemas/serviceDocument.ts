@@ -1,8 +1,9 @@
 import { defineType, defineField } from "sanity";
+import { isUniqueAcrossLanguage } from "./lib/isUniqueAcrossLanguage";
 
 export default defineType({
-    name: "servicePage",
-    title: "Service Page",
+    name: "serviceDocument",
+    title: "Service",
     type: "document",
     fields: [
         defineField({
@@ -10,6 +11,25 @@ export default defineType({
             type: "string",
             readOnly: true,
             hidden: true,
+        }),
+
+        // ── Core Fields ──
+        defineField({
+            name: "name",
+            title: "Service Name",
+            type: "string",
+            validation: (Rule) => Rule.required(),
+        }),
+        defineField({
+            name: "slug",
+            title: "Slug",
+            type: "slug",
+            options: {
+                source: "name",
+                maxLength: 96,
+                isUnique: isUniqueAcrossLanguage
+            },
+            validation: (Rule) => Rule.required(),
         }),
 
         // ── Hero Section ──
@@ -150,8 +170,6 @@ export default defineType({
         }),
     ],
     preview: {
-        prepare() {
-            return { title: "Service Page" };
-        },
+        select: { title: "name", subtitle: "heroSubtitle" },
     },
 });
