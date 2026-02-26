@@ -19,6 +19,7 @@ export default defineType({
         { name: "cta", title: "CTA" },
         { name: "caseStudy", title: "Case Study" },
         { name: "metrics", title: "Metrics" },
+        { name: "cookieConsent", title: "Cookie Consent" },
     ],
     fields: [
         defineField({
@@ -541,6 +542,20 @@ export default defineType({
                 defineField({ name: "arabicTextAccuracy", title: "Arabic Text Accuracy", type: "string" }),
                 defineField({ name: "dialectsSupported", title: "Dialects Supported", type: "string" }),
                 defineField({ name: "arabicTokensTrained", title: "Arabic Tokens Trained", type: "string" }),
+            ],
+        }),
+        // ── Cookie Consent ──
+        defineField({
+            name: "cookieConsent",
+            title: "Cookie Consent",
+            type: "object",
+            group: "cookieConsent",
+            fields: [
+                defineField({ name: "title", title: "Title", type: "string" }),
+                defineField({ name: "description", title: "Description", type: "text", rows: 3 }),
+                defineField({ name: "learnMore", title: "Learn More Link", type: "string" }),
+                defineField({ name: "acceptAll", title: "Accept All Button", type: "string" }),
+                defineField({ name: "reject", title: "Reject Button", type: "string" }),
             ],
         }),
     ],

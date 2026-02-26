@@ -70,7 +70,7 @@ async function seedArabic() {
                 title: "حلول مخصصة",
                 description:
                     "أنظمة ذكاء اصطناعي مصممة خصيصاً لحل تحدياتك التشغيلية الفريدة واحتياجات صناعتك.",
-                image: "/bentogird/aisolution.svg",
+                image: "/bentogird/agenticai.svg",
             },
             {
                 _key: "svc-industry",
@@ -78,7 +78,7 @@ async function seedArabic() {
                 title: "التميز الصناعي",
                 description:
                     "الاستفادة من الخبرة المتخصصة في المجال لنشر حلول ذكاء اصطناعي تتجاوز معايير الصناعة للأمان والموثوقية.",
-                image: "/bentogird/industry.svg",
+                image: "/bentogird/faas.svg",
             },
             {
                 _key: "svc-lab",
