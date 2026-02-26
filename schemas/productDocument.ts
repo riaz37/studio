@@ -226,9 +226,22 @@ export default defineType({
         defineField({ name: "demoSubtitle", title: "Demo Section Subtitle", type: "text", rows: 2 }),
         defineField({ name: "demoBadge", title: "Demo Badge", type: "string" }),
 
+        // ── CTA Section ──
+        defineField({ name: "ctaTitle", title: "CTA Title", type: "string", description: 'e.g. "Ready to Try ERP?"' }),
+        defineField({ name: "ctaSubtitle", title: "CTA Subtitle", type: "text", rows: 2 }),
+        defineField({ name: "ctaButtonText", title: "CTA Button Text", type: "string" }),
+
         // ── Architecture / Cinematic Reel ──
         defineField({ name: "architectureTitle", title: "Architecture Section Title", type: "string" }),
         defineField({ name: "architectureBadge", title: "Architecture Badge", type: "string" }),
+        defineField({ name: "architectureSubtitle", title: "Architecture Subtitle", type: "text", rows: 2, description: "Detailed subtitle for the architecture reel section" }),
+        defineField({
+            name: "architectureReelImages",
+            title: "Architecture Reel Images",
+            type: "array",
+            of: [{ type: "string" }],
+            description: "Paths to architecture reel slide images",
+        }),
 
         // ── Challenges (Cinematic Flow header) ──
         defineField({ name: "challengesBadge", title: "Challenges Badge", type: "string" }),

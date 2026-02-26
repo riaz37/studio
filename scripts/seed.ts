@@ -39,14 +39,19 @@ const services = [
         problemSubtitle: "Traditional automation is rigid. Modern business requires adaptability.",
         problemItems: [
             { title: "Legacy Systems Bottlenecks", description: "Siloed data and manual processes slowing down growth." },
-            { title: "Complex Decision Costs", description: "High human overhead for repetitive yet complex analytical tasks." }
+            { title: "Complex Decision Costs", description: "High human overhead for repetitive yet complex analytical tasks." },
+            { title: "Slow Velocity", description: "Projects stalled by waiting on manual approvals and handoffs." },
+            { title: "Human Error", description: "Costly mistakes slipping through due to fatigue and complexity." }
         ],
         processTitle: "Our Integration Process",
         processSubtitle: "A structured path to agentic excellence.",
         processSteps: [
             { stepId: "01", title: "Discovery", description: "We analyze your current workflows to identify the highest ROI automation opportunities." },
             { stepId: "02", title: "Architecture", description: "Designing a custom agentic framework tailored to your data environment." },
-            { stepId: "03", title: "Deployment", description: "Phased rollout with continuous monitoring and fine-tuning." }
+            { stepId: "03", title: "Development", description: "Building and training AI agents with your proprietary data and business logic." },
+            { stepId: "04", title: "Integration", description: "Connecting agents to your existing systems via APIs, webhooks, and RPA bridges." },
+            { stepId: "05", title: "Deployment", description: "Phased rollout with continuous monitoring and fine-tuning for production readiness." },
+            { stepId: "06", title: "Support", description: "Ongoing maintenance, performance optimization, and agent evolution as your needs grow." }
         ],
         ctaTitle: "Ready to Integrate Agentic AI?",
         ctaSubtitle: "Let our team design an autonomous agent strategy tailored to your enterprise.",
@@ -74,14 +79,19 @@ const services = [
         problemSubtitle: "Without a strategy, AI projects often become expensive experiments.",
         problemItems: [
             { title: "Fragmented Innovation", description: "Different departments testing different tools with no unified vision." },
-            { title: "Compliance Risks", description: "Deploying AI without proper legal or ethical guardrails." }
+            { title: "Compliance Risks", description: "Deploying AI without proper legal or ethical guardrails." },
+            { title: "Resource Waste", description: "Budget spent on pilot projects that never reach production." },
+            { title: "Skill Gaps", description: "Teams lacking expertise to manage and scale AI initiatives." }
         ],
         processTitle: "The Strategic Journey",
         processSubtitle: "From vision to execution.",
         processSteps: [
-            { stepId: "01", title: "Audit", description: "Comprehensive review of your current tech stack and goals." },
-            { stepId: "02", title: "Strategy", description: "Development of a 24-month AI transformation roadmap." },
-            { stepId: "03", title: "Governance", description: "Setting up the organizational structures to sustain AI growth." }
+            { stepId: "01", title: "Audit", description: "Comprehensive review of your current tech landscape, data maturity, and business objectives." },
+            { stepId: "02", title: "Strategy", description: "Development of a 24-month AI transformation roadmap aligned with your business priorities." },
+            { stepId: "03", title: "Governance", description: "Setting up ethical guidelines, compliance frameworks, and organizational structures." },
+            { stepId: "04", title: "Implementation", description: "Executing priority AI initiatives with measurable milestones and KPIs." },
+            { stepId: "05", title: "Training", description: "Upskilling your workforce to manage, operate, and iterate on AI-powered tools." },
+            { stepId: "06", title: "Optimization", description: "Continuous review and refinement of your AI strategy based on performance data." }
         ],
         ctaTitle: "Ready for Strategic AI Transformation?",
         ctaSubtitle: "Partner with us to build a comprehensive AI roadmap for your enterprise.",
@@ -109,14 +119,19 @@ const services = [
         problemSubtitle: "Self-hosting complex agentic frameworks leads to operational friction.",
         problemItems: [
             { title: "Inconsistent Scaling", description: "Agents crashing during peak loads or wasting idle resources." },
-            { title: "Maintenance Burden", description: "DevOps teams overwhelmed by patching and updating AI environments." }
+            { title: "Maintenance Burden", description: "DevOps teams overwhelmed by patching and updating AI environments." },
+            { title: "High Operational Costs", description: "Expensive infrastructure spending without clear ROI visibility." },
+            { title: "Performance Degradation", description: "Latency and reliability issues impacting agent response times." }
         ],
         processTitle: "Scaling Your Fleet",
-        processSubtitle: "Robust infrastructure in three steps.",
+        processSubtitle: "Robust infrastructure from assessment to ongoing support.",
         processSteps: [
-            { stepId: "01", title: "Provisioning", description: "Setting up your dedicated compute and memory environments." },
-            { stepId: "02", title: "Integration", description: "Connecting your agent frameworks to our FaaS API." },
-            { stepId: "03", title: "Optimization", description: "Fine-tuning resource allocation for peak efficiency." }
+            { stepId: "01", title: "Assessment", description: "Evaluating your current infrastructure, workload patterns, and scaling requirements." },
+            { stepId: "02", title: "Provisioning", description: "Setting up dedicated compute, memory, and GPU environments for your agents." },
+            { stepId: "03", title: "Integration", description: "Connecting your agent frameworks to our FaaS API with secure authentication." },
+            { stepId: "04", title: "Migration", description: "Seamlessly moving existing workloads to the new infrastructure with zero downtime." },
+            { stepId: "05", title: "Optimization", description: "Fine-tuning resource allocation, auto-scaling rules, and cost efficiency." },
+            { stepId: "06", title: "Monitoring", description: "24/7 observability, alerting, and proactive performance management." }
         ],
         ctaTitle: "Ready to Scale Your Agent Fleet?",
         ctaSubtitle: "Get enterprise-grade infrastructure for your agentic AI systems.",
@@ -144,14 +159,19 @@ const services = [
         problemSubtitle: "Off-the-shelf AI tools often fail to capture industry nuances.",
         problemItems: [
             { title: "Generic Output", description: "AI that doesn't understand your specific business jargon or logic." },
-            { title: "Data Privacy Gaps", description: "Inability to use standard tools with restricted datasets." }
+            { title: "Data Privacy Gaps", description: "Inability to use standard tools with restricted datasets." },
+            { title: "Limited Integration", description: "Out-of-the-box solutions that don't fit your existing workflows." },
+            { title: "Inflexible Customization", description: "Expensive and time-consuming modifications for specific needs." }
         ],
         processTitle: "Crafting Your Solution",
         processSubtitle: "Precision engineering from start to finish.",
         processSteps: [
-            { stepId: "01", title: "Consultation", description: "Deep dive into the specific problem space." },
-            { stepId: "02", title: "Prototyping", description: "Rapid MVP development to validate the AI hypothesis." },
-            { stepId: "03", title: "Production", description: "Full-scale development and integration into your ecosystem." }
+            { stepId: "01", title: "Consultation", description: "Deep dive into your problem space, data landscape, and success criteria." },
+            { stepId: "02", title: "Design", description: "Architecting a solution blueprint with data flows, model selection, and integration points." },
+            { stepId: "03", title: "Prototyping", description: "Rapid MVP development to validate the AI hypothesis with real data." },
+            { stepId: "04", title: "Development", description: "Full-scale model training, fine-tuning, and application engineering." },
+            { stepId: "05", title: "Deployment", description: "Production launch with cloud, on-premise, or hybrid infrastructure." },
+            { stepId: "06", title: "Iteration", description: "Continuous feedback loops, model retraining, and feature expansion." }
         ],
         ctaTitle: "Ready for a Tailored AI Solution?",
         ctaSubtitle: "Let us craft an AI system built specifically for your operational needs.",
@@ -182,14 +202,19 @@ const arabicServices = [
         problemSubtitle: "الأتمتة التقليدية جامدة. تتطلب الأعمال الحديثة القابلية للتكيف.",
         problemItems: [
             { title: "اختناقات الأنظمة القديمة", description: "البيانات المعزولة والعمليات اليدوية التي تبطئ النمو." },
-            { title: "تكاليف القرار المعقدة", description: "عبء بشري مرتفع للمهام التحليلية المتكررة والمعقدة." }
+            { title: "تكاليف القرار المعقدة", description: "عبء بشري مرتفع للمهام التحليلية المتكررة والمعقدة." },
+            { title: "بطء السرعة", description: "المشاريع المتوقفة بسبب انتظار الموافقات اليدوية والتحويلات." },
+            { title: "الخطأ البشري", description: "الأخطاء المكلفة التي تمر عبر الإجازات والتعقيد." }
         ],
         processTitle: "عملية التكامل لدينا",
         processSubtitle: "مسار منظم نحو التميز الوكيلي.",
         processSteps: [
             { stepId: "01", title: "الاكتشاف", description: "نحلل سير عملك الحالي لتحديد أعلى فرص الأتمتة عائدًا على الاستثمار." },
             { stepId: "02", title: "الهندسة المعمارية", description: "تصميم إطار عمل وكيلي مخصص يتناسب مع بيئة بياناتك." },
-            { stepId: "03", title: "النشر", description: "طرح تدريجي مع مراقبة وضبط مستمر." }
+            { stepId: "03", title: "التطوير", description: "بناء وتدريب وكلاء الذكاء الاصطناعي ببياناتك الخاصة ومنطق أعمالك." },
+            { stepId: "04", title: "التكامل", description: "ربط الوكلاء بأنظمتك الحالية عبر واجهات برمجة التطبيقات وأتمتة العمليات." },
+            { stepId: "05", title: "النشر", description: "طرح تدريجي مع مراقبة مستمرة وضبط دقيق لجاهزية الإنتاج." },
+            { stepId: "06", title: "الدعم", description: "صيانة مستمرة وتحسين الأداء وتطوير الوكلاء مع نمو احتياجاتك." }
         ],
         ctaTitle: "هل أنت مستعد لتكامل الذكاء الاصطناعي الوكيل؟",
         ctaSubtitle: "دع فريقنا يصمم استراتيجية وكلاء مستقلين مخصصة لمؤسستك.",
@@ -217,14 +242,19 @@ const arabicServices = [
         problemSubtitle: "بدون استراتيجية، غالبًا ما تصبح مشاريع الذكاء الاصطناعي تجارب مكلفة.",
         problemItems: [
             { title: "ابتكار مجزأ", description: "أقسام مختلفة تختبر أدوات مختلفة بدون رؤية موحدة." },
-            { title: "مخاطر الامتثال", description: "نشر الذكاء الاصطناعي بدون حواجز قانونية أو أخلاقية مناسبة." }
+            { title: "مخاطر الامتثال", description: "نشر الذكاء الاصطناعي بدون حواجز قانونية أو أخلاقية مناسبة." },
+            { title: "هدر الموارد", description: "الميزانية التي يتم إنفاقها على مشاريع تجريبية لا تصل أبدًا إلى الإنتاج." },
+            { title: "فجوات المهارات", description: "الفرق التي تفتقر إلى الخبرة لإدارة وتوسيع مبادرات الذكاء الاصطناعي." }
         ],
         processTitle: "الرحلة الاستراتيجية",
         processSubtitle: "من الرؤية إلى التنفيذ.",
         processSteps: [
-            { stepId: "01", title: "التدقيق", description: "مراجعة شاملة لوضعك التكنولوجي الحالي وأهدافك." },
-            { stepId: "02", title: "الاستراتيجية", description: "تطوير خارطة طريق للتحول بالذكاء الاصطناعي لمدة 24 شهرًا." },
-            { stepId: "03", title: "الحوكمة", description: "إعداد الهياكل التنظيمية لاستدامة نمو الذكاء الاصطناعي." }
+            { stepId: "01", title: "التدقيق", description: "مراجعة شاملة للمشهد التقني الحالي ونضج البيانات وأهداف العمل." },
+            { stepId: "02", title: "الاستراتيجية", description: "تطوير خارطة طريق للتحول بالذكاء الاصطناعي لمدة 24 شهراً متوافقة مع أولويات أعمالك." },
+            { stepId: "03", title: "الحوكمة", description: "وضع المبادئ التوجيهية الأخلاقية وأطر الامتثال والهياكل التنظيمية." },
+            { stepId: "04", title: "التنفيذ", description: "تنفيذ مبادرات الذكاء الاصطناعي ذات الأولوية مع معالم قابلة للقياس ومؤشرات أداء." },
+            { stepId: "05", title: "التدريب", description: "تطوير مهارات قوتك العاملة لإدارة وتشغيل وتطوير الأدوات المدعومة بالذكاء الاصطناعي." },
+            { stepId: "06", title: "التحسين", description: "مراجعة وتحسين مستمر لاستراتيجية الذكاء الاصطناعي بناءً على بيانات الأداء." }
         ],
         ctaTitle: "هل أنت مستعد للتحول الاستراتيجي بالذكاء الاصطناعي؟",
         ctaSubtitle: "تعاون معنا لبناء خارطة طريق شاملة للذكاء الاصطناعي لمؤسستك.",
@@ -252,14 +282,19 @@ const arabicServices = [
         problemSubtitle: "الاستضافة الذاتية لأطر عمل الوكلاء المعقدة تؤدي إلى احتكاك تشغيلي.",
         problemItems: [
             { title: "توسع غير متسق", description: "تعطل الوكلاء أثناء ذروة الأحمال أو هدر الموارد الخاملة." },
-            { title: "عبء الصيانة", description: "فرق DevOps غارقة في التحديثات وتصحيح بيئات الذكاء الاصطناعي." }
+            { title: "عبء الصيانة", description: "فرق DevOps غارقة في التحديثات وتصحيح بيئات الذكاء الاصطناعي." },
+            { title: "تكاليف تشغيلية عالية", description: "إنفاق البنية التحتية المكلف بدون رؤية واضحة للعائد على الاستثمار." },
+            { title: "تدهور الأداء", description: "مشاكل الكمون والموثوقية التي تؤثر على أوقات استجابة الوكلاء." }
         ],
         processTitle: "توسيع أسطولك",
-        processSubtitle: "بنية تحتية قوية في ثلاث خطوات.",
+        processSubtitle: "بنية تحتية قوية من التقييم إلى الدعم المستمر.",
         processSteps: [
-            { stepId: "01", title: "توفير الموارد", description: "إعداد بيئات الحوسبة والذاكرة المخصصة لك." },
-            { stepId: "02", title: "التكامل", description: "ربط أطر عمل وكلائك بواجهة برمجة تطبيقات FaaS الخاصة بنا." },
-            { stepId: "03", title: "التحسين", description: "ضبط تخصيص الموارد لتحقيق أقصى كفاءة." }
+            { stepId: "01", title: "التقييم", description: "تقييم بنيتك التحتية الحالية وأنماط العمل ومتطلبات التوسع." },
+            { stepId: "02", title: "توفير الموارد", description: "إعداد بيئات الحوسبة والذاكرة ووحدات معالجة الرسومات المخصصة لوكلائك." },
+            { stepId: "03", title: "التكامل", description: "ربط أطر عمل وكلائك بواجهة برمجة تطبيقات FaaS مع مصادقة آمنة." },
+            { stepId: "04", title: "الترحيل", description: "نقل سلس للأحمال الحالية إلى البنية التحتية الجديدة بدون توقف." },
+            { stepId: "05", title: "التحسين", description: "ضبط تخصيص الموارد وقواعد التوسع التلقائي وكفاءة التكلفة." },
+            { stepId: "06", title: "المراقبة", description: "مراقبة على مدار الساعة وتنبيهات وإدارة أداء استباقية." }
         ],
         ctaTitle: "هل أنت مستعد لتوسيع أسطول وكلائك؟",
         ctaSubtitle: "احصل على بنية تحتية على مستوى المؤسسات لأنظمة الذكاء الاصطناعي الوكيلية.",
@@ -287,14 +322,19 @@ const arabicServices = [
         problemSubtitle: "غالبًا ما تفشل أدوات الذكاء الاصطناعي الجاهزة في التقاط الفروق الدقيقة في الصناعة.",
         problemItems: [
             { title: "مخرجات عامة", description: "ذكاء اصطناعي لا يفهم المصطلحات أو المنطق الخاص بشركتك." },
-            { title: "فجوات خصوصية البيانات", description: "عدم القدرة على استخدام الأدوات القياسية مع مجموعات البيانات المقيدة." }
+            { title: "فجوات خصوصية البيانات", description: "عدم القدرة على استخدام الأدوات القياسية مع مجموعات البيانات المقيدة." },
+            { title: "التكامل المحدود", description: "الحلول الجاهزة التي لا تناسب سير عملك الموجود." },
+            { title: "التخصيص غير المرن", description: "التعديلات المكلفة والمستهلكة للوقت لتلبية احتياجات معينة." }
         ],
         processTitle: "صياغة حلك",
         processSubtitle: "هندسة دقيقة من البداية إلى النهاية.",
         processSteps: [
-            { stepId: "01", title: "الاستشارة", description: "غوص عميق في مجال المشكلة المحددة." },
-            { stepId: "02", title: "النماذج الأولية", description: "تطوير سريع للنماذج الأولية للتحقق من فرضية الذكاء الاصطناعي." },
-            { stepId: "03", title: "الإنتاج", description: "تطوير كامل النطاق والدمج في نظامك البيئي." }
+            { stepId: "01", title: "الاستشارة", description: "غوص عميق في مجال مشكلتك ومشهد البيانات ومعايير النجاح." },
+            { stepId: "02", title: "التصميم", description: "بناء مخطط الحل مع تدفقات البيانات واختيار النماذج ونقاط التكامل." },
+            { stepId: "03", title: "النماذج الأولية", description: "تطوير سريع للنماذج الأولية للتحقق من فرضية الذكاء الاصطناعي ببيانات حقيقية." },
+            { stepId: "04", title: "التطوير", description: "تدريب النماذج على نطاق كامل وضبطها الدقيق وهندسة التطبيقات." },
+            { stepId: "05", title: "النشر", description: "إطلاق الإنتاج على بنية تحتية سحابية أو محلية أو هجينة." },
+            { stepId: "06", title: "التكرار", description: "حلقات تغذية راجعة مستمرة وإعادة تدريب النماذج وتوسيع الميزات." }
         ],
         ctaTitle: "هل أنت مستعد لحل ذكاء اصطناعي مخصص؟",
         ctaSubtitle: "دعنا نصنع نظام ذكاء اصطناعي مبني خصيصًا لاحتياجاتك التشغيلية.",
@@ -350,15 +390,20 @@ const productsEn = [
         ],
         outcomesTitle: "Outcomes",
         outcomesBadge: "Proof",
-        demoTitle: "Intelligence in Motion",
-        demoSubtitle: "Experience the standard of enterprise autonomy.",
+        demoTitle: "Voice ERP in Action",
+        demoSubtitle: "Watch how voice commands transform business operations.",
         demoBadge: "Demo",
         architectureTitle: "Architecture Deck",
         architectureBadge: "Visual Index",
+        architectureSubtitle: "Architecture — ERP. Detailed visualization of the voice-activated ERP engine components.",
+        architectureReelImages: ["/productimages/Slide-22.png", "/productimages/Slide-23.png", "/productimages/Slide-24.png"],
+        ctaTitle: "Ready to Try ERP?",
+        ctaSubtitle: "Manage your entire business through voice commands.",
+        ctaButtonText: "Get Started",
         challengesBadge: "Pain Points",
         challengesTitlePart1: "Current Market ",
         challengesTitlePart2: "Challenges",
-        challengesSubtitle: "Identifying the friction points and systemic inefficiencies that currently throttle growth and AI adoption in established industries.",
+        challengesSubtitle: "Uncovering operational bottlenecks and manual process inefficiencies that hold SMEs back from scaling efficiently.",
         cinematicNarrative: {
             introLine: "Every day, teams hit the same walls.",
             problemsIntroLine: "Three barriers stand in the way.",
@@ -427,15 +472,20 @@ const productsEn = [
         ],
         outcomesTitle: "Outcomes",
         outcomesBadge: "Proof",
-        demoTitle: "Intelligence in Motion",
-        demoSubtitle: "Experience the standard of enterprise autonomy.",
+        demoTitle: "Framework in Action",
+        demoSubtitle: "See rapid AI agent deployment at enterprise scale.",
         demoBadge: "Demo",
         architectureTitle: "Architecture Deck",
         architectureBadge: "Visual Index",
+        architectureSubtitle: "Architecture — AI Framework. Detailed visualization of the agent orchestration engine components.",
+        architectureReelImages: ["/productimages/Slide-22.png", "/productimages/Slide-23.png", "/productimages/Slide-24.png"],
+        ctaTitle: "Ready to Try AI Framework?",
+        ctaSubtitle: "Build and deploy AI agents at enterprise scale.",
+        ctaButtonText: "Get Started",
         challengesBadge: "Pain Points",
         challengesTitlePart1: "Current Market ",
         challengesTitlePart2: "Challenges",
-        challengesSubtitle: "Identifying the friction points and systemic inefficiencies that currently throttle growth and AI adoption in established industries.",
+        challengesSubtitle: "Confronting the slow development cycles and integration barriers that prevent enterprises from deploying AI agents at scale.",
         cinematicNarrative: {
             introLine: "Building AI agents shouldn't take months.",
             problemsIntroLine: "Three obstacles slow you down.",
@@ -504,15 +554,20 @@ const productsEn = [
         ],
         outcomesTitle: "Outcomes",
         outcomesBadge: "Proof",
-        demoTitle: "Intelligence in Motion",
-        demoSubtitle: "Experience the standard of enterprise autonomy.",
+        demoTitle: "Knowledge in Action",
+        demoSubtitle: "Watch instant answers flow from your knowledge base.",
         demoBadge: "Demo",
         architectureTitle: "Architecture Deck",
         architectureBadge: "Visual Index",
+        architectureSubtitle: "Architecture — Zakra. Detailed visualization of the knowledge synthesis engine components.",
+        architectureReelImages: ["/productimages/Slide-22.png", "/productimages/Slide-23.png", "/productimages/Slide-24.png"],
+        ctaTitle: "Ready to Try Zakra?",
+        ctaSubtitle: "Unlock instant, context-aware answers from your knowledge base.",
+        ctaButtonText: "Get Started",
         challengesBadge: "Pain Points",
         challengesTitlePart1: "Current Market ",
         challengesTitlePart2: "Challenges",
-        challengesSubtitle: "Identifying the friction points and systemic inefficiencies that currently throttle growth and AI adoption in established industries.",
+        challengesSubtitle: "Exposing the knowledge silos and retrieval gaps that keep enterprises from leveraging their own data effectively.",
         cinematicNarrative: {
             introLine: "Knowledge is scattered. Answers are hard to find.",
             problemsIntroLine: "Three barriers stand in the way.",
@@ -581,15 +636,20 @@ const productsEn = [
         ],
         outcomesTitle: "Outcomes",
         outcomesBadge: "Proof",
-        demoTitle: "Intelligence in Motion",
-        demoSubtitle: "Experience the standard of enterprise autonomy.",
+        demoTitle: "Support in Action",
+        demoSubtitle: "See 24/7 AI customer service handle real requests.",
         demoBadge: "Demo",
         architectureTitle: "Architecture Deck",
         architectureBadge: "Visual Index",
+        architectureSubtitle: "Architecture — Jawib. Detailed visualization of the customer service automation engine components.",
+        architectureReelImages: ["/productimages/Slide-22.png", "/productimages/Slide-23.png", "/productimages/Slide-24.png"],
+        ctaTitle: "Ready to Try Jawib?",
+        ctaSubtitle: "Transform your customer service with 24/7 AI support.",
+        ctaButtonText: "Get Started",
         challengesBadge: "Pain Points",
         challengesTitlePart1: "Current Market ",
         challengesTitlePart2: "Challenges",
-        challengesSubtitle: "Identifying the friction points and systemic inefficiencies that currently throttle growth and AI adoption in established industries.",
+        challengesSubtitle: "Addressing the support volume overload and inconsistent service quality that erode customer trust and drain support teams.",
         cinematicNarrative: {
             introLine: "Support volume never stops. Teams burn out.",
             problemsIntroLine: "Three barriers stand in the way.",
@@ -658,15 +718,20 @@ const productsEn = [
         ],
         outcomesTitle: "Outcomes",
         outcomesBadge: "Proof",
-        demoTitle: "Intelligence in Motion",
-        demoSubtitle: "Experience the standard of enterprise autonomy.",
+        demoTitle: "Arabic Intelligence in Action",
+        demoSubtitle: "Experience native Arabic understanding across dialects.",
         demoBadge: "Demo",
         architectureTitle: "Architecture Deck",
         architectureBadge: "Visual Index",
+        architectureSubtitle: "Architecture — Fasih. Detailed visualization of the native Arabic language model components.",
+        architectureReelImages: ["/productimages/Slide-22.png", "/productimages/Slide-23.png", "/productimages/Slide-24.png"],
+        ctaTitle: "Ready to Try Fasih?",
+        ctaSubtitle: "Experience native Arabic language understanding.",
+        ctaButtonText: "Get Started",
         challengesBadge: "Pain Points",
         challengesTitlePart1: "Current Market ",
         challengesTitlePart2: "Challenges",
-        challengesSubtitle: "Identifying the friction points and systemic inefficiencies that currently throttle growth and AI adoption in established industries.",
+        challengesSubtitle: "Revealing the dialect blindness and cultural gaps in generic language models that fail Arabic-speaking users and markets.",
         cinematicNarrative: {
             introLine: "Arabic deserves more than an afterthought.",
             problemsIntroLine: "Three barriers stand in the way.",
