@@ -27,6 +27,18 @@ export default defineType({
             rows: 2,
             description: "Tagline below the hero title",
         }),
+        defineField({
+            name: "heroBadgePill",
+            title: "Hero Badge Pill",
+            type: "string",
+            description: "Small badge text above the hero title (e.g. 'Exclusive')",
+        }),
+        defineField({
+            name: "heroBadgeDescription",
+            title: "Hero Badge Description",
+            type: "string",
+            description: "Description text next to the badge (e.g. 'Tomorrow's Edge, Built Today')",
+        }),
 
         // ── Services Section ──
         defineField({
@@ -78,6 +90,12 @@ export default defineType({
             rows: 2,
         }),
         defineField({
+            name: "achievementsBadge",
+            title: "Achievements Badge",
+            type: "string",
+            description: "Badge label for achievements section (e.g. 'Our Achievement')",
+        }),
+        defineField({
             name: "achievements",
             title: "Achievement Stats",
             type: "array",
@@ -109,6 +127,12 @@ export default defineType({
             rows: 2,
         }),
         defineField({
+            name: "missionBadge",
+            title: "Mission Badge",
+            type: "string",
+            description: "Badge label for mission section (e.g. 'Our Mission')",
+        }),
+        defineField({
             name: "missionCards",
             title: "Mission Cards",
             type: "array",
@@ -138,6 +162,12 @@ export default defineType({
             title: "Technology Section Subtitle",
             type: "text",
             rows: 2,
+        }),
+        defineField({
+            name: "technologyBadge",
+            title: "Technology Badge",
+            type: "string",
+            description: "Badge label for technology section (e.g. 'Core Tech')",
         }),
         defineField({
             name: "technologyCards",

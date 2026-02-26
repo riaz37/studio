@@ -65,6 +65,12 @@ export default defineType({
             rows: 3,
         }),
         defineField({
+            name: "problemBadge",
+            title: "Problem Badge",
+            type: "string",
+            description: 'Badge label for problem section (e.g. "The Challenge")',
+        }),
+        defineField({
             name: "problemItems",
             title: "Problem Items",
             type: "array",
@@ -93,6 +99,18 @@ export default defineType({
             title: "Features Section Subtitle",
             type: "text",
             rows: 2,
+        }),
+        defineField({
+            name: "featuresBadge",
+            title: "Features Badge",
+            type: "string",
+            description: 'Badge label for features section (e.g. "What we deliver")',
+        }),
+        defineField({
+            name: "featuresCentralNode",
+            title: "Features Central Node Label",
+            type: "string",
+            description: 'Label for the central node in features (e.g. "Core Service")',
         }),
         defineField({
             name: "features",
@@ -126,6 +144,12 @@ export default defineType({
             rows: 2,
         }),
         defineField({
+            name: "processBadge",
+            title: "Process Badge",
+            type: "string",
+            description: 'Badge label for process section (e.g. "Process")',
+        }),
+        defineField({
             name: "processSteps",
             title: "Process Steps",
             type: "array",
@@ -156,6 +180,18 @@ export default defineType({
             type: "text",
             rows: 3,
         }),
+        defineField({
+            name: "beforeAfterLabel",
+            title: "Before & After Badge Label",
+            type: "string",
+            description: 'Badge text for before/after section (e.g. "Before & after")',
+        }),
+        defineField({
+            name: "beforeAfterTitle",
+            title: "Before & After Section Title",
+            type: "string",
+            description: 'Title for before/after section (e.g. "See the difference")',
+        }),
 
         // ── CTA Section ──
         defineField({
@@ -168,6 +204,16 @@ export default defineType({
             title: "CTA Subtitle",
             type: "text",
             rows: 2,
+        }),
+        defineField({
+            name: "ctaButtonText",
+            title: "CTA Button Text",
+            type: "string",
+        }),
+        defineField({
+            name: "ctaButtonLink",
+            title: "CTA Button Link",
+            type: "string",
         }),
     ],
     preview: {

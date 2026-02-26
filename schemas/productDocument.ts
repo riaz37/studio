@@ -208,6 +208,103 @@ export default defineType({
                 },
             ],
         }),
+
+        // ── Hero CTA ──
+        defineField({
+            name: "exploreButton",
+            title: "Explore Button Text",
+            type: "string",
+            description: 'CTA button in hero, e.g. "Explore Solution" / "استكشف الحل"',
+        }),
+
+        // ── Outcomes / Business Impact ──
+        defineField({ name: "outcomesTitle", title: "Outcomes Section Title", type: "string" }),
+        defineField({ name: "outcomesBadge", title: "Outcomes Badge", type: "string" }),
+
+        // ── Demo / Solution Video ──
+        defineField({ name: "demoTitle", title: "Demo Section Title", type: "string" }),
+        defineField({ name: "demoSubtitle", title: "Demo Section Subtitle", type: "text", rows: 2 }),
+        defineField({ name: "demoBadge", title: "Demo Badge", type: "string" }),
+
+        // ── Architecture / Cinematic Reel ──
+        defineField({ name: "architectureTitle", title: "Architecture Section Title", type: "string" }),
+        defineField({ name: "architectureBadge", title: "Architecture Badge", type: "string" }),
+
+        // ── Challenges (Cinematic Flow header) ──
+        defineField({ name: "challengesBadge", title: "Challenges Badge", type: "string" }),
+        defineField({ name: "challengesTitlePart1", title: "Challenges Title Part 1", type: "string" }),
+        defineField({ name: "challengesTitlePart2", title: "Challenges Title Part 2 (highlighted)", type: "string" }),
+        defineField({ name: "challengesSubtitle", title: "Challenges Subtitle", type: "text", rows: 3 }),
+
+        // ── Cinematic Narrative Lines ──
+        defineField({
+            name: "cinematicNarrative",
+            title: "Cinematic Narrative Lines",
+            type: "object",
+            fields: [
+                defineField({ name: "introLine", title: "Intro Line", type: "string" }),
+                defineField({ name: "problemsIntroLine", title: "Problems Intro Line", type: "string" }),
+                defineField({ name: "epiphanyPreLine", title: "Epiphany Pre-Line", type: "string" }),
+                defineField({ name: "solutionIntroLine", title: "Solution Intro Line", type: "string" }),
+                defineField({ name: "recapLine", title: "Recap Line", type: "string" }),
+            ],
+        }),
+
+        // ── Cinematic Problems ──
+        defineField({
+            name: "cinematicProblems",
+            title: "Cinematic Problems",
+            type: "array",
+            of: [
+                {
+                    type: "object",
+                    fields: [
+                        defineField({ name: "title", title: "Problem Title", type: "string" }),
+                        defineField({ name: "description", title: "Problem Description", type: "text", rows: 3 }),
+                        defineField({ name: "solTitle", title: "Solution Title", type: "string" }),
+                        defineField({ name: "solDesc", title: "Solution Description", type: "text", rows: 3 }),
+                        defineField({ name: "solImpact", title: "Solution Impact", type: "string", description: 'e.g. "+75% Time Savings"' }),
+                    ],
+                    preview: {
+                        select: { title: "title", subtitle: "solTitle" },
+                    },
+                },
+            ],
+        }),
+
+        // ── User Journey ──
+        defineField({ name: "journeyTitle", title: "Journey Section Title", type: "string" }),
+        defineField({ name: "journeySubtitle", title: "Journey Section Subtitle", type: "text", rows: 2 }),
+        defineField({ name: "journeyBadge", title: "Journey Badge", type: "string" }),
+        defineField({
+            name: "journeyStages",
+            title: "Journey Stage Labels",
+            type: "array",
+            of: [{ type: "string" }],
+            description: 'Stage labels, e.g. ["Stage One", "Stage Two", ...]',
+        }),
+        defineField({
+            name: "journeyLayers",
+            title: "Journey Layers",
+            type: "array",
+            of: [
+                {
+                    type: "object",
+                    fields: [
+                        defineField({ name: "title", title: "Layer Title", type: "string" }),
+                        defineField({
+                            name: "nodes",
+                            title: "Node Labels",
+                            type: "array",
+                            of: [{ type: "string" }],
+                        }),
+                    ],
+                    preview: {
+                        select: { title: "title" },
+                    },
+                },
+            ],
+        }),
     ],
     preview: {
         select: { title: "name", subtitle: "description" },
