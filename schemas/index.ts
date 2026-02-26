@@ -5,6 +5,7 @@ import productDocument from "./productDocument";
 import serviceDocument from "./serviceDocument";
 import contactPage from "./contactPage";
 import navigation from "./navigation";
+import uiTranslations from "./uiTranslations";
 
 export const schemaTypes = [
     caseStudy,
@@ -14,4 +15,5 @@ export const schemaTypes = [
     serviceDocument,
     contactPage,
     navigation,
+    uiTranslations,
 ];

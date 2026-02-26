@@ -76,6 +76,11 @@ export default defineConfig({
               .child(
                 S.documentTypeList("navigation").title("Navigation & Footer")
               ),
+            S.listItem()
+              .title("UI Translations")
+              .child(
+                S.documentTypeList("uiTranslations").title("UI Translations")
+              ),
           ]),
     }),
     visionTool(),
@@ -92,6 +97,7 @@ export default defineConfig({
         "serviceDocument",
         "contactPage",
         "navigation",
+        "uiTranslations",
       ],
     }),
   ],
