@@ -13,7 +13,9 @@ export default defineType({
         { name: "footer", title: "Footer" },
         { name: "menus", title: "Menus" },
         { name: "products", title: "Products" },
-        { name: "serviceHero", title: "Service Hero" },
+        { name: "service", title: "Service" },
+        { name: "notFound", title: "Not Found" },
+        { name: "error", title: "Error" },
         { name: "cta", title: "CTA" },
         { name: "caseStudy", title: "Case Study" },
         { name: "metrics", title: "Metrics" },
@@ -334,15 +336,123 @@ export default defineType({
             ],
         }),
 
-        // ── Service Hero ──
+        // ── Service ──
         defineField({
-            name: "serviceHero",
-            title: "Service Hero",
+            name: "service",
+            title: "Service",
             type: "object",
-            group: "serviceHero",
+            group: "service",
             fields: [
-                defineField({ name: "getStarted", title: "Get Started", type: "string" }),
-                defineField({ name: "viewFeatures", title: "View Features", type: "string" }),
+                defineField({
+                    name: "hero",
+                    title: "Hero",
+                    type: "object",
+                    fields: [
+                        defineField({ name: "getStarted", title: "Get Started", type: "string" }),
+                        defineField({ name: "viewFeatures", title: "View Features", type: "string" }),
+                    ],
+                }),
+                defineField({
+                    name: "problem",
+                    title: "Problem Section",
+                    type: "object",
+                    fields: [
+                        defineField({ name: "defaultTitle", title: "Default Title", type: "string" }),
+                        defineField({ name: "defaultSubtitle", title: "Default Subtitle", type: "text", rows: 2 }),
+                    ],
+                }),
+                defineField({
+                    name: "features",
+                    title: "Features Section",
+                    type: "object",
+                    fields: [
+                        defineField({ name: "defaultTitle", title: "Default Title", type: "string" }),
+                        defineField({ name: "defaultSubtitle", title: "Default Subtitle", type: "text", rows: 2 }),
+                    ],
+                }),
+                defineField({
+                    name: "video",
+                    title: "Video Section",
+                    type: "object",
+                    fields: [
+                        defineField({ name: "badge", title: "Badge", type: "string" }),
+                        defineField({ name: "title", title: "Title", type: "string" }),
+                        defineField({ name: "subtitle", title: "Subtitle", type: "string" }),
+                    ],
+                }),
+                defineField({
+                    name: "beforeAfter",
+                    title: "Before & After",
+                    type: "object",
+                    fields: [
+                        defineField({ name: "badge", title: "Badge", type: "string" }),
+                        defineField({ name: "defaultTitle", title: "Default Title", type: "string" }),
+                    ],
+                }),
+                defineField({
+                    name: "cta",
+                    title: "CTA Defaults",
+                    type: "object",
+                    fields: [
+                        defineField({ name: "defaultTitle", title: "Default Title", type: "string" }),
+                        defineField({ name: "defaultText", title: "Default Text", type: "text", rows: 2 }),
+                        defineField({ name: "defaultButton", title: "Default Button", type: "string" }),
+                    ],
+                }),
+                defineField({
+                    name: "metadata",
+                    title: "Metadata",
+                    type: "object",
+                    fields: [
+                        defineField({ name: "notFoundTitle", title: "Not Found Title", type: "string" }),
+                        defineField({ name: "notFoundDescription", title: "Not Found Description", type: "string" }),
+                    ],
+                }),
+                defineField({ name: "defaultHeroSubtitle1", title: "Default Hero Subtitle Line 1", type: "string" }),
+                defineField({ name: "defaultHeroSubtitle2", title: "Default Hero Subtitle Line 2", type: "string" }),
+            ],
+        }),
+
+        // ── Not Found ──
+        defineField({
+            name: "notFound",
+            title: "Not Found Page",
+            type: "object",
+            group: "notFound",
+            fields: [
+                defineField({ name: "title", title: "Title", type: "string" }),
+                defineField({ name: "description", title: "Description", type: "text", rows: 2 }),
+                defineField({ name: "goHome", title: "Go Home Button", type: "string" }),
+                defineField({ name: "contactUs", title: "Contact Us Button", type: "string" }),
+                defineField({ name: "quickLinks", title: "Quick Links Title", type: "string" }),
+            ],
+        }),
+
+        // ── Error ──
+        defineField({
+            name: "error",
+            title: "Error Page",
+            type: "object",
+            group: "error",
+            fields: [
+                defineField({ name: "title", title: "Title", type: "string" }),
+                defineField({ name: "description", title: "Description", type: "text", rows: 2 }),
+                defineField({ name: "errorId", title: "Error ID Label", type: "string" }),
+                defineField({ name: "tryAgain", title: "Try Again Button", type: "string" }),
+                defineField({ name: "goHome", title: "Go Home Button", type: "string" }),
+                defineField({ name: "whatToDo", title: "What To Do Title", type: "string" }),
+                defineField({ name: "tip1", title: "Tip 1", type: "string" }),
+                defineField({ name: "tip2", title: "Tip 2", type: "string" }),
+                defineField({ name: "tip3", title: "Tip 3", type: "string" }),
+                defineField({ name: "contactSupport", title: "Contact Support", type: "string" }),
+                defineField({ name: "criticalTitle", title: "Critical Error Title", type: "string" }),
+                defineField({ name: "criticalDescription", title: "Critical Error Description", type: "text", rows: 2 }),
+                defineField({ name: "reloadApp", title: "Reload App Button", type: "string" }),
+                defineField({ name: "troubleshooting", title: "Troubleshooting Title", type: "string" }),
+                defineField({ name: "clearCache", title: "Clear Cache Tip", type: "string" }),
+                defineField({ name: "tryBrowser", title: "Try Browser Tip", type: "string" }),
+                defineField({ name: "checkJs", title: "Check JS Tip", type: "string" }),
+                defineField({ name: "contactIfPersists", title: "Contact If Persists Tip", type: "string" }),
             ],
         }),
 

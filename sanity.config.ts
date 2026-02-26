@@ -46,11 +46,6 @@ export default defineConfig({
               .child(
                 S.documentTypeList("serviceDocument").title("Services")
               ),
-            S.listItem()
-              .title("Contact Page")
-              .child(
-                S.documentTypeList("contactPage").title("Contact Page")
-              ),
             S.divider(),
 
             // ── Collections ──
@@ -72,11 +67,6 @@ export default defineConfig({
 
             // ── Site-wide ──
             S.listItem()
-              .title("Navigation & Footer")
-              .child(
-                S.documentTypeList("navigation").title("Navigation & Footer")
-              ),
-            S.listItem()
               .title("UI Translations")
               .child(
                 S.documentTypeList("uiTranslations").title("UI Translations")
@@ -95,8 +85,6 @@ export default defineConfig({
         "aboutPage",
         "productDocument",
         "serviceDocument",
-        "contactPage",
-        "navigation",
         "uiTranslations",
       ],
     }),
