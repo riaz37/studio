@@ -21,7 +21,7 @@ const services = [
     {
         name: "Agentic AI Integration",
         slug: "agentic-ai-integration",
-        description: "Seamlessly integrate autonomous agents into your workflow to automate complex decision-making processes.",
+        description: "Placeholder text for Agentic AI Integration. This is a temporary description to be replaced with actual content later.",
         menuDescription: "Autonomous agents for complex workflows",
         heroTitle: "Agentic AI Integration",
         heroSubtitle: ["Transforming workflows with autonomous intelligence."],
@@ -56,46 +56,6 @@ const services = [
         ctaTitle: "Ready to Integrate Agentic AI?",
         ctaSubtitle: "Let our team design an autonomous agent strategy tailored to your enterprise.",
         ctaButtonText: "Start Integration",
-        ctaButtonLink: "/contact"
-    },
-    {
-        name: "Enterprise Strategy",
-        slug: "enterprise-strategy",
-        description: "Tailored AI roadmaps designed to align with your business goals and drive long-term digital transformation.",
-        menuDescription: "Strategic AI roadmaps for business growth",
-        heroTitle: "Enterprise Strategy",
-        heroSubtitle: ["Strategic planning for AI-driven excellence."],
-        heroTagline: "Strategic Advisory",
-        featuresTitle: "Strategic Foundations",
-        featuresSubtitle: "Building the AI future of your organization on solid ground.",
-        features: [
-            { title: "ROI-Focused Roadmapping", description: "Prioritizing AI initiatives that deliver measurable business value.", icon: "TrendingUp" },
-            { title: "Risk Mitigation", description: "Proactive identification and management of AI implementation risks.", icon: "ShieldAlert" },
-            { title: "Change Management", description: "Preparing your workforce for the transition to AI-augmented workflows.", icon: "Users" },
-            { title: "Governance Models", description: "Establishing ethical and operational guidelines for AI use.", icon: "Scale" },
-            { title: "Technology Selection", description: "Expert guidance on selecting the right LLMs and platforms.", icon: "Search" }
-        ],
-        problemTitle: "Directionless AI Adoption",
-        problemSubtitle: "Without a strategy, AI projects often become expensive experiments.",
-        problemItems: [
-            { title: "Fragmented Innovation", description: "Different departments testing different tools with no unified vision." },
-            { title: "Compliance Risks", description: "Deploying AI without proper legal or ethical guardrails." },
-            { title: "Resource Waste", description: "Budget spent on pilot projects that never reach production." },
-            { title: "Skill Gaps", description: "Teams lacking expertise to manage and scale AI initiatives." }
-        ],
-        processTitle: "The Strategic Journey",
-        processSubtitle: "From vision to execution.",
-        processSteps: [
-            { stepId: "01", title: "Audit", description: "Comprehensive review of your current tech landscape, data maturity, and business objectives." },
-            { stepId: "02", title: "Strategy", description: "Development of a 24-month AI transformation roadmap aligned with your business priorities." },
-            { stepId: "03", title: "Governance", description: "Setting up ethical guidelines, compliance frameworks, and organizational structures." },
-            { stepId: "04", title: "Implementation", description: "Executing priority AI initiatives with measurable milestones and KPIs." },
-            { stepId: "05", title: "Training", description: "Upskilling your workforce to manage, operate, and iterate on AI-powered tools." },
-            { stepId: "06", title: "Optimization", description: "Continuous review and refinement of your AI strategy based on performance data." }
-        ],
-        ctaTitle: "Ready for Strategic AI Transformation?",
-        ctaSubtitle: "Partner with us to build a comprehensive AI roadmap for your enterprise.",
-        ctaButtonText: "Begin Strategy",
         ctaButtonLink: "/contact"
     },
     {
@@ -219,46 +179,6 @@ const arabicServices = [
         ctaTitle: "هل أنت مستعد لتكامل الذكاء الاصطناعي الوكيل؟",
         ctaSubtitle: "دع فريقنا يصمم استراتيجية وكلاء مستقلين مخصصة لمؤسستك.",
         ctaButtonText: "ابدأ التكامل",
-        ctaButtonLink: "/contact"
-    },
-    {
-        name: "استراتيجية المؤسسة",
-        slug: "enterprise-strategy",
-        description: "خرائط طريق للذكاء الاصطناعي مصممة لتتماشى مع أهداف عملك وتدفع التحول الرقمي طويل الأمد.",
-        menuDescription: "خرائط طريق استراتيجية لنمو الأعمال",
-        heroTitle: "استراتيجية المؤسسة",
-        heroSubtitle: ["تخطيط استراتيجي للتميز المدفوع بالذكاء الاصطناعي."],
-        heroTagline: "استشارات استراتيجية",
-        featuresTitle: "الأسس الاستراتيجية",
-        featuresSubtitle: "بناء مستقبل الذكاء الاصطناعي لمؤسستك على أسس صلبة.",
-        features: [
-            { title: "خارطة طريق تركز على العائد", description: "إعطاء الأولوية لمبادرات الذكاء الاصطناعي التي تقدم قيمة تجارية ملموسة.", icon: "TrendingUp" },
-            { title: "تخفيف المخاطر", description: "تحديد وإدارة مخاطر تنفيذ الذكاء الاصطناعي بشكل استباقي.", icon: "ShieldAlert" },
-            { title: "إدارة التغيير", description: "إعداد القوى العاملة لديك للانتقال إلى سير عمل معزز بالذكاء الاصطناعي.", icon: "Users" },
-            { title: "نماذج الحوكمة", description: "وضع مبادئ توجيهية أخلاقية وتشغيلية لاستخدام الذكاء الاصطناعي.", icon: "Scale" },
-            { title: "اختيار التكنولوجيا", description: "توجيه الخبراء في اختيار نماذج اللغات الكبيرة (LLMs) والمنصات المناسبة.", icon: "Search" }
-        ],
-        problemTitle: "تبني الذكاء الاصطناعي بلا اتجاه",
-        problemSubtitle: "بدون استراتيجية، غالبًا ما تصبح مشاريع الذكاء الاصطناعي تجارب مكلفة.",
-        problemItems: [
-            { title: "ابتكار مجزأ", description: "أقسام مختلفة تختبر أدوات مختلفة بدون رؤية موحدة." },
-            { title: "مخاطر الامتثال", description: "نشر الذكاء الاصطناعي بدون حواجز قانونية أو أخلاقية مناسبة." },
-            { title: "هدر الموارد", description: "الميزانية التي يتم إنفاقها على مشاريع تجريبية لا تصل أبدًا إلى الإنتاج." },
-            { title: "فجوات المهارات", description: "الفرق التي تفتقر إلى الخبرة لإدارة وتوسيع مبادرات الذكاء الاصطناعي." }
-        ],
-        processTitle: "الرحلة الاستراتيجية",
-        processSubtitle: "من الرؤية إلى التنفيذ.",
-        processSteps: [
-            { stepId: "01", title: "التدقيق", description: "مراجعة شاملة للمشهد التقني الحالي ونضج البيانات وأهداف العمل." },
-            { stepId: "02", title: "الاستراتيجية", description: "تطوير خارطة طريق للتحول بالذكاء الاصطناعي لمدة 24 شهراً متوافقة مع أولويات أعمالك." },
-            { stepId: "03", title: "الحوكمة", description: "وضع المبادئ التوجيهية الأخلاقية وأطر الامتثال والهياكل التنظيمية." },
-            { stepId: "04", title: "التنفيذ", description: "تنفيذ مبادرات الذكاء الاصطناعي ذات الأولوية مع معالم قابلة للقياس ومؤشرات أداء." },
-            { stepId: "05", title: "التدريب", description: "تطوير مهارات قوتك العاملة لإدارة وتشغيل وتطوير الأدوات المدعومة بالذكاء الاصطناعي." },
-            { stepId: "06", title: "التحسين", description: "مراجعة وتحسين مستمر لاستراتيجية الذكاء الاصطناعي بناءً على بيانات الأداء." }
-        ],
-        ctaTitle: "هل أنت مستعد للتحول الاستراتيجي بالذكاء الاصطناعي؟",
-        ctaSubtitle: "تعاون معنا لبناء خارطة طريق شاملة للذكاء الاصطناعي لمؤسستك.",
-        ctaButtonText: "ابدأ الاستراتيجية",
         ctaButtonLink: "/contact"
     },
     {
@@ -774,8 +694,8 @@ async function seed() {
             servicesSubtitle: "Explore our comprehensive suite of AI solutions designed to transform your enterprise.",
             servicesBadge: "Our Solutions",
             services: [
-                { _key: "svc-agentic", id: "agentic", title: "Agentic AI Integration", description: "Seamlessly integrate autonomous agents into your workflow to automate complex decision-making processes.", image: "/bentogird/agenticai.svg" },
-                { _key: "svc-strategy", id: "strategy", title: "Enterprise Strategy", description: "Tailored AI roadmaps designed to align with your business goals and drive long-term digital transformation.", image: "/bentogird/enterprise.svg" },
+                { _key: "svc-agentic-1", id: "agentic-1", title: "Agentic AI Integration", description: "PLACEHOLDER", image: "/bentogird/agenticai.svg" },
+                { _key: "svc-agentic-2", id: "agentic-2", title: "Agentic AI Integration", description: "Seamlessly integrate autonomous agents into your workflow to automate complex decision-making processes.", image: "/bentogird/agenticai.svg" },
                 { _key: "svc-faas", id: "faas", title: "FaaS Infrastructure", description: "Managed infrastructure for AI Agent Framework-as-a-Service, ensuring scalability and peak performance.", image: "/bentogird/faas.svg" },
                 { _key: "svc-tailored", id: "tailored", title: "Tailored Solutions", description: "Bespoke AI systems built from the ground up to solve your unique operational challenges and industry needs.", image: "/bentogird/ailab.svg" },
             ],
