@@ -42,6 +42,7 @@ export default defineType({
                 defineField({ name: "service", title: "Service", type: "string" }),
                 defineField({ name: "caseStudy", title: "Case Study", type: "string" }),
                 defineField({ name: "contact", title: "Contact", type: "string" }),
+                defineField({ name: "language", title: "Language", type: "string" }),
                 defineField({ name: "getStarted", title: "Get Started", type: "string" }),
             ],
         }),

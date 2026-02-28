@@ -41,6 +41,7 @@ function jsonToSanityFields(messages: any) {
             service: messages.Navigation?.service,
             caseStudy: messages.Navigation?.["case-study"],
             contact: messages.Navigation?.contact,
+            language: messages.Navigation?.language,
             getStarted: messages.Navigation?.getStarted,
         },
         loading: {
