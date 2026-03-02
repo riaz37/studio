@@ -56,6 +56,8 @@ export default defineType({
             fields: [
                 defineField({ name: "message", title: "Message", type: "string" }),
                 defineField({ name: "subMessage", title: "Sub Message", type: "string" }),
+                defineField({ name: "introTitle", title: "Intro Title", type: "string" }),
+                defineField({ name: "introTagline", title: "Intro Tagline", type: "string" }),
             ],
         }),
 

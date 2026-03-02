@@ -47,6 +47,8 @@ function jsonToSanityFields(messages: any) {
         loading: {
             message: messages.Loading?.message,
             subMessage: messages.Loading?.subMessage,
+            introTitle: messages.Loading?.introTitle,
+            introTagline: messages.Loading?.introTagline,
         },
         home: {
             reveal: { text: messages.Home?.reveal?.text },
