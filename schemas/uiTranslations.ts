@@ -1,4 +1,5 @@
 import { defineType, defineField } from "sanity";
+import { defineTranslationProduct, defineSectionDefaults } from "./lib/schema-utils";
 
 export default defineType({
     name: "uiTranslations",
@@ -90,51 +91,11 @@ export default defineType({
                             title: "Products",
                             type: "object",
                             fields: [
-                                defineField({
-                                    name: "erp",
-                                    title: "ERP",
-                                    type: "object",
-                                    fields: [
-                                        defineField({ name: "name", title: "Name", type: "string" }),
-                                        defineField({ name: "description", title: "Description", type: "text", rows: 2 }),
-                                    ],
-                                }),
-                                defineField({
-                                    name: "aiFramework",
-                                    title: "AI Framework",
-                                    type: "object",
-                                    fields: [
-                                        defineField({ name: "name", title: "Name", type: "string" }),
-                                        defineField({ name: "description", title: "Description", type: "text", rows: 2 }),
-                                    ],
-                                }),
-                                defineField({
-                                    name: "zakra",
-                                    title: "Zakra",
-                                    type: "object",
-                                    fields: [
-                                        defineField({ name: "name", title: "Name", type: "string" }),
-                                        defineField({ name: "description", title: "Description", type: "text", rows: 2 }),
-                                    ],
-                                }),
-                                defineField({
-                                    name: "jawib",
-                                    title: "Jawib",
-                                    type: "object",
-                                    fields: [
-                                        defineField({ name: "name", title: "Name", type: "string" }),
-                                        defineField({ name: "description", title: "Description", type: "text", rows: 2 }),
-                                    ],
-                                }),
-                                defineField({
-                                    name: "fasih",
-                                    title: "Fasih",
-                                    type: "object",
-                                    fields: [
-                                        defineField({ name: "name", title: "Name", type: "string" }),
-                                        defineField({ name: "description", title: "Description", type: "text", rows: 2 }),
-                                    ],
-                                }),
+                                defineTranslationProduct("erp", "ERP", { hasDescription: true, hasMenuDescription: false }),
+                                defineTranslationProduct("aiFramework", "AI Framework", { hasDescription: true, hasMenuDescription: false }),
+                                defineTranslationProduct("zakra", "Zakra", { hasDescription: true, hasMenuDescription: false }),
+                                defineTranslationProduct("jawib", "Jawib", { hasDescription: true, hasMenuDescription: false }),
+                                defineTranslationProduct("fasih", "Fasih", { hasDescription: true, hasMenuDescription: false }),
                             ],
                         }),
                     ],
@@ -292,51 +253,11 @@ export default defineType({
             type: "object",
             group: "products",
             fields: [
-                defineField({
-                    name: "erp",
-                    title: "ERP",
-                    type: "object",
-                    fields: [
-                        defineField({ name: "name", title: "Name", type: "string" }),
-                        defineField({ name: "menuDescription", title: "Menu Description", type: "string" }),
-                    ],
-                }),
-                defineField({
-                    name: "aiFramework",
-                    title: "AI Framework",
-                    type: "object",
-                    fields: [
-                        defineField({ name: "name", title: "Name", type: "string" }),
-                        defineField({ name: "menuDescription", title: "Menu Description", type: "string" }),
-                    ],
-                }),
-                defineField({
-                    name: "zakra",
-                    title: "Zakra",
-                    type: "object",
-                    fields: [
-                        defineField({ name: "name", title: "Name", type: "string" }),
-                        defineField({ name: "menuDescription", title: "Menu Description", type: "string" }),
-                    ],
-                }),
-                defineField({
-                    name: "jawib",
-                    title: "Jawib",
-                    type: "object",
-                    fields: [
-                        defineField({ name: "name", title: "Name", type: "string" }),
-                        defineField({ name: "menuDescription", title: "Menu Description", type: "string" }),
-                    ],
-                }),
-                defineField({
-                    name: "fasih",
-                    title: "Fasih",
-                    type: "object",
-                    fields: [
-                        defineField({ name: "name", title: "Name", type: "string" }),
-                        defineField({ name: "menuDescription", title: "Menu Description", type: "string" }),
-                    ],
-                }),
+                defineTranslationProduct("erp", "ERP", { hasDescription: false, hasMenuDescription: true }),
+                defineTranslationProduct("aiFramework", "AI Framework", { hasDescription: false, hasMenuDescription: true }),
+                defineTranslationProduct("zakra", "Zakra", { hasDescription: false, hasMenuDescription: true }),
+                defineTranslationProduct("jawib", "Jawib", { hasDescription: false, hasMenuDescription: true }),
+                defineTranslationProduct("fasih", "Fasih", { hasDescription: false, hasMenuDescription: true }),
             ],
         }),
 
@@ -356,24 +277,8 @@ export default defineType({
                         defineField({ name: "viewFeatures", title: "View Features", type: "string" }),
                     ],
                 }),
-                defineField({
-                    name: "problem",
-                    title: "Problem Section",
-                    type: "object",
-                    fields: [
-                        defineField({ name: "defaultTitle", title: "Default Title", type: "string" }),
-                        defineField({ name: "defaultSubtitle", title: "Default Subtitle", type: "text", rows: 2 }),
-                    ],
-                }),
-                defineField({
-                    name: "features",
-                    title: "Features Section",
-                    type: "object",
-                    fields: [
-                        defineField({ name: "defaultTitle", title: "Default Title", type: "string" }),
-                        defineField({ name: "defaultSubtitle", title: "Default Subtitle", type: "text", rows: 2 }),
-                    ],
-                }),
+                defineSectionDefaults("problem", "Problem Section"),
+                defineSectionDefaults("features", "Features Section"),
                 defineField({
                     name: "video",
                     title: "Video Section",
