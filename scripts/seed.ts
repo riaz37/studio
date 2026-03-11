@@ -17,53 +17,62 @@ const client = createClient({
     apiVersion: "2024-02-25",
 });
 
+const legacyServiceDocumentIds = [
+    "service-agentic-ai-integration",
+    "service-faas-infrastructure",
+    "service-tailored-solutions",
+    "service-agentic-ai-integration-ar",
+    "service-faas-infrastructure-ar",
+    "service-tailored-solutions-ar",
+];
+
 const services = [
     {
-        name: "Agentic AI Integration",
-        slug: "agentic-ai-integration",
-        description: "Placeholder text for Agentic AI Integration. This is a temporary description to be replaced with actual content later.",
-        menuDescription: "Autonomous agents for complex workflows",
-        heroTitle: "Agentic AI Integration",
-        heroSubtitle: ["Transforming workflows with autonomous intelligence."],
-        heroTagline: "Next-Gen Automation",
-        featuresTitle: "Why Choose Agentic AI?",
-        featuresSubtitle: "Our agents are designed to handle high-stakes environments with precision.",
+        name: "Integration & Automation",
+        slug: "integration-and-automation",
+        description: "Complete AI integration and strategic automation for modern operations, from discovery and roadmap design to deployment and ongoing support.",
+        menuDescription: "End-to-end integration and automation services",
+        heroTitle: "Integration & Automation",
+        heroSubtitle: ["From strategy to deployment. Integration and automation that drives ROI."],
+        heroTagline: "Operational Transformation",
+        featuresTitle: "What We Deliver",
+        featuresSubtitle: "A practical path from disconnected operations to measurable automation outcomes.",
         features: [
-            { title: "Autonomous Decision Making", description: "Agents can evaluate multiple variables and choose the best course of action without human intervention.", icon: "Cpu" },
-            { title: "Universal Integration", description: "Plugs directly into your existing software stack via API or RPA.", icon: "Layers" },
-            { title: "24/7 Operation", description: "Intelligent workers that never sleep, ensuring consistent throughput around the clock.", icon: "Clock" },
-            { title: "Adaptive Learning", description: "Self-improving systems that optimize their performance based on feedback loops.", icon: "Zap" },
-            { title: "Secure Infrastructure", description: "Built with enterprise-grade security protocols to protect sensitive data.", icon: "Shield" }
+            { title: "Strategic Planning", description: "Assess your systems and workflows to identify the highest-value integration and automation opportunities.", icon: "Compass" },
+            { title: "Workflow Automation", description: "Replace repetitive manual work with resilient automations that reduce cost and cycle time.", icon: "Zap" },
+            { title: "Custom AI Agents", description: "Deploy intelligent agents tailored to your business rules, approvals, and operational constraints.", icon: "Cpu" },
+            { title: "System Integration", description: "Connect AI workflows to your ERP, CRM, knowledge sources, and internal tools through secure interfaces.", icon: "Layers" },
+            { title: "Adoption Enablement", description: "Support rollout, training, and change management so new systems stick in production.", icon: "Users" }
         ],
-        problemTitle: "The Productivity Gap",
-        problemSubtitle: "Traditional automation is rigid. Modern business requires adaptability.",
+        problemTitle: "Why Teams Stall",
+        problemSubtitle: "Disconnected systems and fragile manual work make automation initiatives slow, expensive, and hard to scale.",
         problemItems: [
-            { title: "Legacy Systems Bottlenecks", description: "Siloed data and manual processes slowing down growth." },
-            { title: "Complex Decision Costs", description: "High human overhead for repetitive yet complex analytical tasks." },
-            { title: "Slow Velocity", description: "Projects stalled by waiting on manual approvals and handoffs." },
-            { title: "Human Error", description: "Costly mistakes slipping through due to fatigue and complexity." }
+            { title: "Manual Workflows Everywhere", description: "Teams spend too much time routing approvals, copying data, and maintaining spreadsheets." },
+            { title: "Disconnected Systems", description: "Business-critical tools do not share context, creating delays, duplicate work, and blind spots." },
+            { title: "Slow Implementation Velocity", description: "Automation projects drag on because architecture, ownership, and rollout are unclear." },
+            { title: "Adoption Friction", description: "Even useful systems fail when teams are not trained, enabled, or brought along during change." }
         ],
-        processTitle: "Our Integration Process",
-        processSubtitle: "A structured path to agentic excellence.",
+        processTitle: "Our Delivery Process",
+        processSubtitle: "A structured engagement that moves from assessment to rollout without guesswork.",
         processSteps: [
-            { stepId: "01", title: "Discovery", description: "We analyze your current workflows to identify the highest ROI automation opportunities." },
-            { stepId: "02", title: "Architecture", description: "Designing a custom agentic framework tailored to your data environment." },
-            { stepId: "03", title: "Development", description: "Building and training AI agents with your proprietary data and business logic." },
-            { stepId: "04", title: "Integration", description: "Connecting agents to your existing systems via APIs, webhooks, and RPA bridges." },
-            { stepId: "05", title: "Deployment", description: "Phased rollout with continuous monitoring and fine-tuning for production readiness." },
-            { stepId: "06", title: "Support", description: "Ongoing maintenance, performance optimization, and agent evolution as your needs grow." }
+            { stepId: "01", title: "Discovery", description: "Audit current workflows, systems, and pain points to define a clear automation scope." },
+            { stepId: "02", title: "Roadmap", description: "Prioritize high-impact use cases, target integrations, and delivery milestones." },
+            { stepId: "03", title: "Implementation", description: "Build automations, agent flows, and integrations around your real operating environment." },
+            { stepId: "04", title: "System Connection", description: "Connect the solution to source systems, data stores, and approval chains with operational safeguards." },
+            { stepId: "05", title: "Rollout", description: "Launch incrementally, validate outcomes, and tune workflows with production feedback." },
+            { stepId: "06", title: "Ongoing Support", description: "Monitor performance, expand coverage, and keep automations aligned with business change." }
         ],
-        ctaTitle: "Ready to Integrate Agentic AI?",
-        ctaSubtitle: "Let our team design an autonomous agent strategy tailored to your enterprise.",
-        ctaButtonText: "Start Integration",
+        ctaTitle: "Ready to Automate What Matters?",
+        ctaSubtitle: "Let us design an integration and automation roadmap tailored to your operation.",
+        ctaButtonText: "Start Planning",
         ctaButtonLink: "/contact"
     },
     {
-        name: "FaaS Infrastructure",
-        slug: "faas-infrastructure",
+        name: "AI Agents Framework-as-a-Service (FaaS)",
+        slug: "faas",
         description: "Managed infrastructure for AI Agent Framework-as-a-Service, ensuring scalability and peak performance.",
         menuDescription: "Scalable infrastructure for AI agents",
-        heroTitle: "FaaS Infrastructure",
+        heroTitle: "AI Agents Framework-as-a-Service (FaaS)",
         heroSubtitle: ["Powering the future of agentic services."],
         heroTagline: "Infrastructure Excellence",
         featuresTitle: "High-Performance FaaS",
@@ -99,94 +108,94 @@ const services = [
         ctaButtonLink: "/contact"
     },
     {
-        name: "Tailored Solutions",
-        slug: "tailored-solutions",
-        description: "Bespoke AI systems built from the ground up to solve your unique operational challenges and industry needs.",
-        menuDescription: "Bespoke AI systems for unique needs",
-        heroTitle: "Tailored Solutions",
-        heroSubtitle: ["Custom AI built for your specific challenges."],
-        heroTagline: "Bespoke Development",
-        featuresTitle: "Customized Capability",
-        featuresSubtitle: "Unique solutions for unique problems.",
+        name: "Innovation & Research Lab",
+        slug: "innovation-lab",
+        description: "Cutting-edge AI research and development programs that prototype, validate, and operationalize new capabilities for the enterprise.",
+        menuDescription: "Applied AI R&D and rapid prototyping",
+        heroTitle: "Innovation & Research Lab",
+        heroSubtitle: ["Cutting-edge AI R&D. Pushing boundaries of AI."],
+        heroTagline: "Applied Research",
+        featuresTitle: "Advanced R&D",
+        featuresSubtitle: "Explore, prototype, and operationalize the next wave of AI capability.",
         features: [
-            { title: "Vertical Specialization", description: "Deep industry-specific knowledge built into every model.", icon: "Briefcase" },
-            { title: "Proprietary Models", description: "Custom fine-tuning on your sensitive, proprietary datasets.", icon: "Database" },
-            { title: "White-Label Delivery", description: "Seamlessly integrate custom AI as a core feature of your product.", icon: "Tag" },
-            { title: "Hybrid Deployment", description: "Cloud, on-premise, or edge deployment options available.", icon: "Box" },
-            { title: "Ongoing Evolution", description: "Long-term partnership to iterate and expand system capabilities.", icon: "RefreshCw" }
+            { title: "Research & Development", description: "Investigate new AI techniques, architectures, and operating models tailored to your domain.", icon: "FlaskConical" },
+            { title: "Prototype Development", description: "Turn emerging ideas into fast, testable prototypes with measurable learning goals.", icon: "Bot" },
+            { title: "Technology Partnerships", description: "Evaluate tools, providers, and ecosystem partners that can accelerate delivery.", icon: "Handshake" },
+            { title: "Early Access Programs", description: "Pilot new capabilities before broad rollout to reduce uncertainty and increase confidence.", icon: "Rocket" },
+            { title: "Continuous Validation", description: "Measure outcomes, iterate rapidly, and transition validated ideas into production initiatives.", icon: "RefreshCw" }
         ],
-        problemTitle: "One-Size-Fits-None",
-        problemSubtitle: "Off-the-shelf AI tools often fail to capture industry nuances.",
+        problemTitle: "Why Innovation Slows Down",
+        problemSubtitle: "Great AI ideas often stall between exploration and execution because teams lack time, structure, and safe experimentation paths.",
         problemItems: [
-            { title: "Generic Output", description: "AI that doesn't understand your specific business jargon or logic." },
-            { title: "Data Privacy Gaps", description: "Inability to use standard tools with restricted datasets." },
-            { title: "Limited Integration", description: "Out-of-the-box solutions that don't fit your existing workflows." },
-            { title: "Inflexible Customization", description: "Expensive and time-consuming modifications for specific needs." }
+            { title: "Innovation Backlog", description: "Promising ideas keep getting deferred because delivery teams are focused on current operations." },
+            { title: "Prototype Risk", description: "Teams need a safe way to test new AI capabilities before committing full production budgets." },
+            { title: "Weak Validation", description: "Experiments often lack clear success criteria, making good ideas hard to defend and fund." },
+            { title: "No Transition Path", description: "Even successful prototypes can die without a plan to operationalize them." }
         ],
-        processTitle: "Crafting Your Solution",
-        processSubtitle: "Precision engineering from start to finish.",
+        processTitle: "How the Lab Operates",
+        processSubtitle: "A repeatable model for exploring new AI ideas and moving validated ones into delivery.",
         processSteps: [
-            { stepId: "01", title: "Consultation", description: "Deep dive into your problem space, data landscape, and success criteria." },
-            { stepId: "02", title: "Design", description: "Architecting a solution blueprint with data flows, model selection, and integration points." },
-            { stepId: "03", title: "Prototyping", description: "Rapid MVP development to validate the AI hypothesis with real data." },
-            { stepId: "04", title: "Development", description: "Full-scale model training, fine-tuning, and application engineering." },
-            { stepId: "05", title: "Deployment", description: "Production launch with cloud, on-premise, or hybrid infrastructure." },
-            { stepId: "06", title: "Iteration", description: "Continuous feedback loops, model retraining, and feature expansion." }
+            { stepId: "01", title: "Opportunity Framing", description: "Define the research question, target user, data inputs, and success criteria." },
+            { stepId: "02", title: "Experiment Design", description: "Choose the right models, tools, and evaluation method for the proposed concept." },
+            { stepId: "03", title: "Rapid Prototyping", description: "Build a focused proof of concept that surfaces technical and business signal quickly." },
+            { stepId: "04", title: "Validation", description: "Test with real stakeholders, measure outcomes, and identify production constraints." },
+            { stepId: "05", title: "Production Handoff", description: "Package validated learnings into a roadmap the delivery team can execute." },
+            { stepId: "06", title: "Iteration", description: "Continue refining, expanding, or retiring experiments based on evidence." }
         ],
-        ctaTitle: "Ready for a Tailored AI Solution?",
-        ctaSubtitle: "Let us craft an AI system built specifically for your operational needs.",
-        ctaButtonText: "Get Started",
+        ctaTitle: "Ready to Explore the Next AI Advantage?",
+        ctaSubtitle: "Work with our research lab to validate bold AI ideas before committing full production investment.",
+        ctaButtonText: "Start a Research Sprint",
         ctaButtonLink: "/contact"
     },
 ];
 
 const arabicServices = [
     {
-        name: "تكامل الذكاء الاصطناعي الوكيل",
-        slug: "agentic-ai-integration",
-        description: "دمج الوكلاء المستقلين بسلاسة في سير عملك لأتمتة عمليات اتخاذ القرار المعقدة.",
-        menuDescription: "وكلاء مستقلون لسير العمل المعقد",
-        heroTitle: "تكامل الذكاء الاصطناعي الوكيل",
-        heroSubtitle: ["تحويل سير العمل بالذكاء المستقل."],
-        heroTagline: "أتمتة الجيل القادم",
-        featuresTitle: "لماذا تختار الذكاء الاصطناعي الوكيل؟",
-        featuresSubtitle: "تم تصميم وكلائنا للتعامل مع البيئات عالية المخاطر بدقة.",
+        name: "التكامل والأتمتة",
+        slug: "integration-and-automation",
+        description: "تكامل ذكي وأتمتة استراتيجية شاملة، من تحليل الوضع الحالي ووضع خارطة الطريق إلى التنفيذ والدعم المستمر.",
+        menuDescription: "خدمات متكاملة للتكامل والأتمتة",
+        heroTitle: "التكامل والأتمتة",
+        heroSubtitle: ["من الاستراتيجية إلى التنفيذ. تكامل وأتمتة يحققان عائدًا واضحًا."],
+        heroTagline: "تحول تشغيلي",
+        featuresTitle: "ما الذي نقدمه",
+        featuresSubtitle: "مسار عملي ينقل عملياتك من التشتت اليدوي إلى أتمتة قابلة للقياس.",
         features: [
-            { title: "اتخاذ قرار مستقل", description: "يمكن للوكلاء تقييم متغيرات متعددة واختيار أفضل مسار للعمل دون تدخل بشري.", icon: "Cpu" },
-            { title: "تكامل شامل", description: "اتصال مباشر بمجموعة البرامج الحالية لديك عبر API أو RPA.", icon: "Layers" },
-            { title: "عمل على مدار الساعة", description: "عمال أذكياء لا ينامون أبدًا، مما يضمن إنتاجية ثابتة على مدار الساعة.", icon: "Clock" },
-            { title: "تعلم تكيفي", description: "أنظمة تحسين ذاتي تعمل على تحسين أدائها بناءً على حلقات التغذية الراجعة.", icon: "Zap" },
-            { title: "بنية تحتية آمنة", description: "مبنية ببروتوكولات أمان على مستوى المؤسسات لحماية البيانات الحساسة.", icon: "Shield" }
+            { title: "التخطيط الاستراتيجي", description: "تحليل الأنظمة الحالية وسير العمل لتحديد فرص الأتمتة والتكامل الأعلى أثرًا.", icon: "Compass" },
+            { title: "أتمتة سير العمل", description: "تحويل الأعمال اليدوية المتكررة إلى تدفقات تشغيل موثوقة تقلل الوقت والتكلفة.", icon: "Zap" },
+            { title: "وكلاء ذكاء اصطناعي مخصصون", description: "بناء وكلاء يتوافقون مع قواعد العمل والموافقات والقيود التشغيلية الفعلية.", icon: "Cpu" },
+            { title: "تكامل الأنظمة", description: "ربط الحلول بأنظمة ERP وCRM ومصادر المعرفة والأدوات الداخلية عبر تكاملات آمنة.", icon: "Layers" },
+            { title: "تمكين التبني", description: "دعم الإطلاق والتدريب وإدارة التغيير لضمان نجاح الحل في بيئة العمل.", icon: "Users" }
         ],
-        problemTitle: "فجوة الإنتاجية",
-        problemSubtitle: "الأتمتة التقليدية جامدة. تتطلب الأعمال الحديثة القابلية للتكيف.",
+        problemTitle: "لماذا تتعطل الفرق",
+        problemSubtitle: "الأنظمة المنفصلة والعمل اليدوي الهش يجعلان مبادرات الأتمتة بطيئة ومكلفة وصعبة التوسع.",
         problemItems: [
-            { title: "اختناقات الأنظمة القديمة", description: "البيانات المعزولة والعمليات اليدوية التي تبطئ النمو." },
-            { title: "تكاليف القرار المعقدة", description: "عبء بشري مرتفع للمهام التحليلية المتكررة والمعقدة." },
-            { title: "بطء السرعة", description: "المشاريع المتوقفة بسبب انتظار الموافقات اليدوية والتحويلات." },
-            { title: "الخطأ البشري", description: "الأخطاء المكلفة التي تمر عبر الإجازات والتعقيد." }
+            { title: "سير عمل يدوي في كل مكان", description: "تضيع الفرق وقتًا كبيرًا في نقل البيانات ومتابعة الموافقات يدويًا." },
+            { title: "أنظمة غير مترابطة", description: "الأدوات الأساسية لا تتبادل السياق، مما يخلق تأخيرًا وتكرارًا ومناطق عمياء." },
+            { title: "بطء التنفيذ", description: "تتعثر مشاريع الأتمتة بسبب غياب الوضوح في المعمارية والمسؤوليات وخطة الإطلاق." },
+            { title: "صعوبة التبني", description: "حتى الحلول الجيدة قد تفشل إذا لم يتم تمكين الفرق وتدريبها أثناء التغيير." }
         ],
-        processTitle: "عملية التكامل لدينا",
-        processSubtitle: "مسار منظم نحو التميز الوكيلي.",
+        processTitle: "منهجية التنفيذ",
+        processSubtitle: "نموذج عمل منظم ينتقل من التقييم إلى الإطلاق دون تخمين.",
         processSteps: [
-            { stepId: "01", title: "الاكتشاف", description: "نحلل سير عملك الحالي لتحديد أعلى فرص الأتمتة عائدًا على الاستثمار." },
-            { stepId: "02", title: "الهندسة المعمارية", description: "تصميم إطار عمل وكيلي مخصص يتناسب مع بيئة بياناتك." },
-            { stepId: "03", title: "التطوير", description: "بناء وتدريب وكلاء الذكاء الاصطناعي ببياناتك الخاصة ومنطق أعمالك." },
-            { stepId: "04", title: "التكامل", description: "ربط الوكلاء بأنظمتك الحالية عبر واجهات برمجة التطبيقات وأتمتة العمليات." },
-            { stepId: "05", title: "النشر", description: "طرح تدريجي مع مراقبة مستمرة وضبط دقيق لجاهزية الإنتاج." },
-            { stepId: "06", title: "الدعم", description: "صيانة مستمرة وتحسين الأداء وتطوير الوكلاء مع نمو احتياجاتك." }
+            { stepId: "01", title: "الاكتشاف", description: "تقييم سير العمل والأنظمة الحالية وتحديد نطاق الأتمتة الأعلى أثرًا." },
+            { stepId: "02", title: "خارطة الطريق", description: "ترتيب حالات الاستخدام وأولويات التكامل ومراحل التنفيذ بشكل واضح." },
+            { stepId: "03", title: "التنفيذ", description: "بناء الأتمتة والتدفقات الذكية والتكاملات بما يتوافق مع بيئة التشغيل الفعلية." },
+            { stepId: "04", title: "ربط الأنظمة", description: "توصيل الحل بمصادر البيانات والأنظمة وسلاسل الموافقات مع ضوابط تشغيلية مناسبة." },
+            { stepId: "05", title: "الإطلاق", description: "إطلاق تدريجي مع قياس النتائج وتحسين التدفقات بناءً على التغذية الراجعة." },
+            { stepId: "06", title: "الدعم المستمر", description: "مراقبة الأداء وتوسيع النطاق والحفاظ على توافق الأتمتة مع تغيّرات العمل." }
         ],
-        ctaTitle: "هل أنت مستعد لتكامل الذكاء الاصطناعي الوكيل؟",
-        ctaSubtitle: "دع فريقنا يصمم استراتيجية وكلاء مستقلين مخصصة لمؤسستك.",
-        ctaButtonText: "ابدأ التكامل",
+        ctaTitle: "هل أنت مستعد لأتمتة ما يهم فعلًا؟",
+        ctaSubtitle: "دعنا نصمم لك خارطة طريق للتكامل والأتمتة تناسب عمليتك التشغيلية.",
+        ctaButtonText: "ابدأ التخطيط",
         ctaButtonLink: "/contact"
     },
     {
-        name: "بنية FaaS التحتية",
-        slug: "faas-infrastructure",
+        name: "إطار عمل الوكلاء كخدمة (FaaS)",
+        slug: "faas",
         description: "بنية تحتية مدارة لإطار عمل وكلاء الذكاء الاصطناعي كخدمة، مما يضمن القابلية للتوسع والأداء الذروة.",
         menuDescription: "بنية تحتية قابلة للتوسع لوكلاء الذكاء الاصطناعي",
-        heroTitle: "بنية FaaS التحتية",
+        heroTitle: "إطار عمل الوكلاء كخدمة (FaaS)",
         heroSubtitle: ["تمكين مستقبل الخدمات الوكيلية."],
         heroTagline: "التميز في البنية التحتية",
         featuresTitle: "FaaS عالي الأداء",
@@ -222,46 +231,60 @@ const arabicServices = [
         ctaButtonLink: "/contact"
     },
     {
-        name: "حلول مخصصة",
-        slug: "tailored-solutions",
-        description: "أنظمة ذكاء اصطناعي مفصلة تم بناؤها من الصفر لحل تحدياتك التشغيلية الفريدة واحتياجاتك الصناعية.",
-        menuDescription: "أنظمة ذكاء اصطناعي مفصلة لاحتياجات فريدة",
-        heroTitle: "حلول مخصصة",
-        heroSubtitle: ["ذكاء اصطناعي مخصص مبني لتحدياتك الخاصة."],
-        heroTagline: "تطوير مفصل",
-        featuresTitle: "قدرة مخصصة",
-        featuresSubtitle: "حلول فريدة لمشاكل فريدة.",
+        name: "مختبر الابتكار والبحث",
+        slug: "innovation-lab",
+        description: "برامج بحث وتطوير متقدمة في الذكاء الاصطناعي لاختبار الأفكار الجديدة وتحويلها إلى مبادرات قابلة للتنفيذ داخل المؤسسة.",
+        menuDescription: "بحث وتطوير تطبيقي ونماذج أولية سريعة",
+        heroTitle: "مختبر الابتكار والبحث",
+        heroSubtitle: ["بحث وتطوير متقدم في الذكاء الاصطناعي. دفع حدود الإمكان."],
+        heroTagline: "بحث تطبيقي",
+        featuresTitle: "بحث وتطوير متقدم",
+        featuresSubtitle: "استكشف وقدّم نماذج أولية وفعّل الجيل التالي من قدرات الذكاء الاصطناعي.",
         features: [
-            { title: "تخصص قطاعي", description: "معرفة صناعية عميقة مدمجة في كل نموذج.", icon: "Briefcase" },
-            { title: "نماذج ملكية", description: "ضبط دقيق مخصص على مجموعات بياناتك الحساسة والخاصة.", icon: "Database" },
-            { title: "تسليم البطاقة البيضاء (White-Label)", description: "دمج الذكاء الاصطناعي المخصص كميزة أساسية لمنتجك.", icon: "Tag" },
-            { title: "نشر هجين", description: "خيارات نشر سحابي، أو في الموقع، أو عند الحافة.", icon: "Box" },
-            { title: "تطور مستمر", description: "شراكة طويلة الأمد لتكرار وتوسيع قدرات النظام.", icon: "RefreshCw" }
+            { title: "البحث والتطوير", description: "استكشاف تقنيات ومعماريات ونماذج تشغيل جديدة في الذكاء الاصطناعي وفقًا لاحتياجك.", icon: "FlaskConical" },
+            { title: "تطوير النماذج الأولية", description: "تحويل الأفكار الواعدة إلى نماذج أولية سريعة قابلة للاختبار والقياس.", icon: "Bot" },
+            { title: "شراكات تقنية", description: "تقييم الأدوات والموردين والشركاء الذين يمكنهم تسريع التجربة والتنفيذ.", icon: "Handshake" },
+            { title: "برامج الوصول المبكر", description: "تجربة القدرات الجديدة قبل التوسع الكامل لتقليل المخاطر وزيادة الثقة.", icon: "Rocket" },
+            { title: "تحقق مستمر", description: "قياس النتائج والتكرار السريع وتحويل الأفكار المثبتة إلى مبادرات إنتاجية.", icon: "RefreshCw" }
         ],
-        problemTitle: "مقاس واحد لا يناسب الجميع",
-        problemSubtitle: "غالبًا ما تفشل أدوات الذكاء الاصطناعي الجاهزة في التقاط الفروق الدقيقة في الصناعة.",
+        problemTitle: "لماذا يتباطأ الابتكار",
+        problemSubtitle: "تتوقف كثير من أفكار الذكاء الاصطناعي الواعدة بين الاستكشاف والتنفيذ بسبب غياب الوقت والبنية ومسار التجربة الآمن.",
         problemItems: [
-            { title: "مخرجات عامة", description: "ذكاء اصطناعي لا يفهم المصطلحات أو المنطق الخاص بشركتك." },
-            { title: "فجوات خصوصية البيانات", description: "عدم القدرة على استخدام الأدوات القياسية مع مجموعات البيانات المقيدة." },
-            { title: "التكامل المحدود", description: "الحلول الجاهزة التي لا تناسب سير عملك الموجود." },
-            { title: "التخصيص غير المرن", description: "التعديلات المكلفة والمستهلكة للوقت لتلبية احتياجات معينة." }
+            { title: "تراكم أفكار الابتكار", description: "تبقى الأفكار الواعدة مؤجلة لأن فرق التنفيذ منشغلة بالأولويات التشغيلية الحالية." },
+            { title: "مخاطر النماذج الأولية", description: "تحتاج الفرق إلى طريقة آمنة لاختبار القدرات الجديدة قبل تخصيص ميزانيات إنتاج كاملة." },
+            { title: "ضعف التحقق", description: "تفشل التجارب في كثير من الأحيان بسبب غياب معايير نجاح واضحة وقياسات مقنعة." },
+            { title: "غياب مسار الانتقال", description: "حتى النماذج الناجحة قد تتوقف إذا لم توجد خطة واضحة لتحويلها إلى تنفيذ فعلي." }
         ],
-        processTitle: "صياغة حلك",
-        processSubtitle: "هندسة دقيقة من البداية إلى النهاية.",
+        processTitle: "كيف يعمل المختبر",
+        processSubtitle: "منهجية متكررة لاستكشاف أفكار الذكاء الاصطناعي وتحويل المثبت منها إلى خطط تنفيذ.",
         processSteps: [
-            { stepId: "01", title: "الاستشارة", description: "غوص عميق في مجال مشكلتك ومشهد البيانات ومعايير النجاح." },
-            { stepId: "02", title: "التصميم", description: "بناء مخطط الحل مع تدفقات البيانات واختيار النماذج ونقاط التكامل." },
-            { stepId: "03", title: "النماذج الأولية", description: "تطوير سريع للنماذج الأولية للتحقق من فرضية الذكاء الاصطناعي ببيانات حقيقية." },
-            { stepId: "04", title: "التطوير", description: "تدريب النماذج على نطاق كامل وضبطها الدقيق وهندسة التطبيقات." },
-            { stepId: "05", title: "النشر", description: "إطلاق الإنتاج على بنية تحتية سحابية أو محلية أو هجينة." },
-            { stepId: "06", title: "التكرار", description: "حلقات تغذية راجعة مستمرة وإعادة تدريب النماذج وتوسيع الميزات." }
+            { stepId: "01", title: "تحديد الفرصة", description: "صياغة سؤال البحث والمستخدم المستهدف والبيانات المطلوبة ومعايير النجاح." },
+            { stepId: "02", title: "تصميم التجربة", description: "اختيار النماذج والأدوات وآلية التقييم الأنسب للفكرة المقترحة." },
+            { stepId: "03", title: "بناء نموذج أولي سريع", description: "تنفيذ إثبات مفهوم مركز يكشف الإشارة التقنية والتجارية بسرعة." },
+            { stepId: "04", title: "التحقق", description: "اختبار النموذج مع أصحاب المصلحة وقياس النتائج وتحديد قيود الإنتاج." },
+            { stepId: "05", title: "تسليم للتنفيذ", description: "تحويل ما ثبت نجاحه إلى خارطة طريق واضحة يمكن لفريق التنفيذ العمل عليها." },
+            { stepId: "06", title: "التكرار", description: "تحسين أو توسيع أو إيقاف التجارب بناءً على الأدلة والنتائج." }
         ],
-        ctaTitle: "هل أنت مستعد لحل ذكاء اصطناعي مخصص؟",
-        ctaSubtitle: "دعنا نصنع نظام ذكاء اصطناعي مبني خصيصًا لاحتياجاتك التشغيلية.",
-        ctaButtonText: "ابدأ الآن",
+        ctaTitle: "هل أنت مستعد لاستكشاف الميزة التالية في الذكاء الاصطناعي؟",
+        ctaSubtitle: "اعمل مع مختبرنا للتحقق من الأفكار الجريئة قبل الالتزام باستثمار إنتاجي كامل.",
+        ctaButtonText: "ابدأ دورة بحث",
         ctaButtonLink: "/contact"
     }
 ];
+
+async function deleteLegacyServiceDocuments() {
+    for (const id of legacyServiceDocumentIds) {
+        try {
+            await client.delete(id);
+            console.log(`   ✓ Removed legacy service document ${id}`);
+        } catch (error) {
+            const message = error instanceof Error ? error.message : String(error);
+            if (!message.toLowerCase().includes("not found")) {
+                throw error;
+            }
+        }
+    }
+}
 
 const productsEn = [
     {
@@ -808,7 +831,11 @@ async function seed() {
             console.log(`   ✓ ${product.name}`);
         }
 
-        // 2. Seed English Services
+        // 2. Remove legacy service documents before reseeding canonical slugs
+        console.log("🧹 Removing legacy service documents...");
+        await deleteLegacyServiceDocuments();
+
+        // 3. Seed English Services
         for (const service of services) {
             console.log(`  Creating service: ${service.name} (en)...`);
             await client.createOrReplace({
@@ -846,7 +873,7 @@ async function seed() {
             });
         }
 
-        // 3. Seed Arabic Services
+        // 4. Seed Arabic Services
         for (const service of arabicServices) {
             console.log(`  Creating service: ${service.name} (ar)...`);
             await client.createOrReplace({

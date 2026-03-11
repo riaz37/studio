@@ -217,6 +217,21 @@ export default defineType({
         }),
     ],
     preview: {
-        select: { title: "name", subtitle: "heroSubtitle" },
+        select: {
+            title: "name",
+            slug: "slug.current",
+            heroSubtitle: "heroSubtitle",
+        },
+        prepare({ title, slug, heroSubtitle }) {
+            const subtitle =
+                slug ||
+                (Array.isArray(heroSubtitle) ? heroSubtitle.filter(Boolean).join(" ") : heroSubtitle) ||
+                "No subtitle";
+
+            return {
+                title,
+                subtitle,
+            };
+        },
     },
 });
