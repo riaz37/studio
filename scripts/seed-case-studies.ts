@@ -26,35 +26,49 @@ const client = createClient({
   token: process.env.SANITY_API_TOKEN,
   apiVersion: "2024-02-25",
 });
-
 // ── Placeholder image URLs (Unsplash) ──
 const IMAGES = {
   // Hero images (2 per case study)
   hero: [
-    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=800&fit=crop",
-    "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&h=800&fit=crop",
-    "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1200&h=800&fit=crop",
-    "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200&h=800&fit=crop",
-    "https://images.unsplash.com/photo-1573164713988-8665fc963095?w=1200&h=800&fit=crop",
-    "https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=1200&h=800&fit=crop",
+    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200",
+    "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200",
+    "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1200",
+    "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200",
+    "https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=1200",
+    "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=1200",
+    "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200",
+    "https://images.unsplash.com/photo-1504384308090-c894fdcc518d?w=1200",
+    "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1200",
+    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200",
+    "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200",
+    "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1200",
+    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200",
+    "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=1200",
+    "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=1200",
+    "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200",
   ],
   // Timeline images (3 per timeline entry)
   timeline: [
-    "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=500&fit=crop",
-    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=500&fit=crop",
-    "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&h=500&fit=crop",
-    "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=800&h=500&fit=crop",
-    "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&h=500&fit=crop",
-    "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&h=500&fit=crop",
-    "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&h=500&fit=crop",
-    "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=500&fit=crop",
-    "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=500&fit=crop",
+    "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800",
+    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800",
+    "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800",
+    "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=800",
+    "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800",
+    "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800",
+    "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800",
+    "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800",
+    "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800",
   ],
   // Thumbnails
   thumbnails: [
-    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&h=675&fit=crop",
-    "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1200&h=675&fit=crop",
-    "https://images.unsplash.com/photo-1573164713988-8665fc963095?w=1200&h=675&fit=crop",
+    "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200",
+    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200",
+    "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1200",
+    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200",
+    "https://images.unsplash.com/photo-1573164713988-8665fc963095?w=1200",
+    "https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=1200",
+    "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1200",
+    "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=1200",
   ],
 };
 
@@ -295,6 +309,206 @@ const caseStudies: CaseStudyData[] = [
       ],
     },
   },
+  {
+    id: "financial-analytics-ai",
+    slug: "financial-analytics-ai",
+    en: {
+      title: "AI-Driven Financial Analytics for Fintech",
+      subtitle: "Unlocking real-time financial insights and predictive trends for a rapidly scaling fintech startup using ESAP AI's advanced data processing engine.",
+      tags: ["Fintech", "Financial AI", "Data Analytics", "Predictive Modeling"],
+      featured: false,
+      timeline: [
+        {
+          date: "2024-04-01",
+          title: "Architecture Design",
+          description: "Designed a real-time data ingestion pipeline capable of processing millions of transactions per second with sub-millisecond latency. Integrated multi-layered security protocols to ensure data integrity and compliance.",
+        },
+        {
+          date: "2024-06-15",
+          title: "Model Training & Deployment",
+          description: "Trained specialized LLMs on historical financial data to identify subtle market patterns. Deployed the analytics dashboard providing consultants with instant, actionable insights.",
+        },
+      ],
+    },
+    ar: {
+      title: "تحليلات مالية مدفوعة بالذكاء الاصطناعي للتكنولوجيا المالية",
+      subtitle: "إطلاق العنان للرؤى المالية في الوقت الفعلي والاتجاهات التنبؤية لشركة ناشئة سريعة النمو في مجال التكنولوجيا المالية باستخدام محرك معالجة البيانات المتقدم من ESAP AI.",
+      tags: ["التكنولوجيا المالية", "الذكاء الاصطناعي المالي", "تحليلات البيانات", "النمذجة التنبؤية"],
+      featured: false,
+      timeline: [
+        {
+          date: "2024-04-01",
+          title: "تصميم البنية التحتية",
+          description: "تصميم خط أنابيب لاستيعاب البيانات في الوقت الفعلي قادر على معالجة ملايين المعاملات في الثانية بوقت استجابة أقل من ميلي ثانية. دمج بروتوكولات أمان متعددة الطبقات لضمان سلامة البيانات والامتثال.",
+        },
+        {
+          date: "2024-06-15",
+          title: "تدريب النموذج ونشره",
+          description: "تدريب نماذج لغوية متخصصة على البيانات المالية التاريخية لتحديد أنماط السوق الدقيقة. نشر لوحة تحكم التحليلات التي تزود الاستشاريين برؤى فورية وقابلة للتنفيذ.",
+        },
+      ],
+    },
+  },
+  {
+    id: "smart-supply-chain",
+    slug: "smart-supply-chain",
+    en: {
+      title: "Smart Supply Chain Optimization",
+      subtitle: "Reducing logistics costs by 25% for a global retail giant through AI-powered predictive demand forecasting and automated warehouse management.",
+      tags: ["Retail", "Supply Chain", "Logistics", "Optimization"],
+      featured: false,
+      timeline: [
+        {
+          date: "2024-02-10",
+          title: "Process Mapping",
+          description: "Analyzed fragmented supply chain data across 50 global locations. Identified inefficiencies in stock replenishment and transport routing using our AI diagnostic tools.",
+        },
+        {
+          date: "2024-05-20",
+          title: "Optimization Engine Launch",
+          description: "Launched the AI optimization engine which autonomously manages inventory levels and suggests optimal shipping routes based on real-time weather and traffic data.",
+        },
+      ],
+    },
+    ar: {
+      title: "تحسين سلاسل الإمداد الذكية",
+      subtitle: "تقليل تكاليف الخدمات اللوجستية بنسبة 25% لشركة تجزئة عالمية عملاقة من خلال التنبؤ بالطلب المدعوم بالذكاء الاصطناعي وإدارة المستودعات المؤتمتة.",
+      tags: ["التجزئة", "سلسلة الإمداد", "الخدمات اللوجستية", "التحسين"],
+      featured: false,
+      timeline: [
+        {
+          date: "2024-02-10",
+          title: "تخطيط العمليات",
+          description: "تحليل بيانات سلسلة التوريد المتفرقة عبر 50 موقعاً عالمياً. تحديد أوجه القصور في تعويض المخزون وتوجيه النقل باستخدام أدواتنا التشخيصية بالذكاء الاصطناعي.",
+        },
+        {
+          date: "2024-05-20",
+          title: "إطلاق محرك التحسين",
+          description: "إطلاق محرك تحسين الذكاء الاصطناعي الذي يدير مستويات المخزون بشكل مستقل ويقترح طرق الشحن المثالية بناءً على بيانات الطقس وحركة المرور في الوقت الفعلي.",
+        },
+      ],
+    },
+  },
+  {
+    id: "healthcare-ai-assistant",
+    slug: "healthcare-ai-assistant",
+    en: {
+      title: "Conversational Healthcare Assistant",
+      subtitle: "Streamlining patient triage and scheduling for a major hospital network, reducing administrative burden by 40% and improving patient access to care.",
+      tags: ["Healthcare", "Patient Care", "Scheduling", "Conversational AI"],
+      featured: false,
+      timeline: [
+        {
+          date: "2024-03-15",
+          title: "Regulatory Compliance Audit",
+          description: "Ensured full compliance with healthcare data privacy regulations (HIPAA/GDPR). Designed a secure, encrypted interface for patient interaction with the AI assistant.",
+        },
+        {
+          date: "2024-07-01",
+          title: "Assistant Deployment",
+          description: "Deployed the AI assistant across the hospital's portal and mobile app. The system now handles 60% of routine inquiries and scheduling requests autonomously.",
+        },
+      ],
+    },
+    ar: {
+      title: "مساعد رعاية صحية محادثاتي",
+      subtitle: "تبسيط فرز المرضى وجدولة المواعيد لشبكة مستشفيات كبرى، مما يقلل العبء الإداري بنسبة 40% ويحسن وصول المرضى إلى الرعاية.",
+      tags: ["الرعاية الصحية", "رعاية المرضى", "الجدولة", "الذكاء الاصطناعي المحادثاتي"],
+      featured: false,
+      timeline: [
+        {
+          date: "2024-03-15",
+          title: "تدقيق الامتثال التنظيمي",
+          description: "ضمان الامتثال الكامل للوائح خصوصية البيانات الصحية (HIPAA/GDPR). تصميم واجهة آمنة ومشفرة لتفاعل المرضى مع مساعد الذكاء الاصطناعي.",
+        },
+        {
+          date: "2024-07-01",
+          title: "نشر المساعد",
+          description: "نشر مساعد الذكاط الاصطناعي عبر بوابة المستشفى وتطبيقه على الهاتف المحمول. يتعامل النظام الآن مع 60% من الاستفسارات الروتينية وطلبات الجدولة بشكل مستقل.",
+        },
+      ],
+    },
+  },
+  {
+    id: "ai-content-gen-marketing",
+    slug: "ai-content-gen-marketing",
+    en: {
+      title: "AI-Powered Content Generation",
+      subtitle: "Empowering a global marketing agency to produce high-quality, culturally nuanced content in both Arabic and English at 10x speed using our generative AI tools.",
+      tags: ["Marketing", "Content Strategy", "Generative AI", "Localization"],
+      featured: false,
+      timeline: [
+        {
+          date: "2024-01-20",
+          title: "Creative Workflow Integration",
+          description: "Integrated our generative AI engine into the agency's creative suite, allowing for seamless transition from brief to multiple content variations in seconds.",
+        },
+        {
+          date: "2024-04-10",
+          title: "Multilingual Excellence",
+          description: "Fine-tuned the model for localized Arabic dialects, ensuring marketing copy resonates with diverse audiences while maintaining brand consistency across regions.",
+        },
+      ],
+    },
+    ar: {
+      title: "توليد المحتوى المدعوم بالذكاء الاصطناعي",
+      subtitle: "تمكين وكالة تسويق عالمية من إنتاج محتوى عالي الجودة ومراعي للثقافات باللغتين العربية والإنجليزية بسرعة أكبر بـ 10 أضعاف باستخدام أدواتنا للذكاء الاصطناعي التوليدي.",
+      tags: ["التسويق", "استراتيجية المحتوى", "الذكاء الاصطناعي التوليدي", "التوطين"],
+      featured: false,
+      timeline: [
+        {
+          date: "2024-01-20",
+          title: "تكامل سير العمل الإبداعي",
+          description: "دمج محرك الذكاء الاصطناعي التوليدي الخاص بنا في المجموعة الإبداعية للوكالة، مما يسمح بالانتقال السلس من الموجز إلى أشكال متعددة للمحتوى في ثوانٍ.",
+        },
+        {
+          date: "2024-04-10",
+          title: "التميز متعدد اللغات",
+          description: "ضبط النموذج للهجات العربية المحلية، مما يضمن صدى النسخ التسويقية لدى الجماهير المتنوعة مع الحفاظ على اتساق العلامة التجارية عبر المناطق.",
+        },
+      ],
+    },
+  },
+  {
+    id: "predictive-maintenance-industrial",
+    slug: "predictive-maintenance-industrial",
+    en: {
+      title: "Predictive Maintenance for Industrial IoT",
+      subtitle: "Preventing costly equipment downtime for a heavy industry manufacturer by deploying IoT sensors integrated with AI predictive maintenance models.",
+      tags: ["Industrial IoT", "Predictive Maintenance", "Manufacturing", "Reliability"],
+      featured: true,
+      timeline: [
+        {
+          date: "2024-05-01",
+          title: "Sensor Network Deployment",
+          description: "Installed thousands of IoT sensors across critical machinery. Established a robust data transmission network to our cloud-based AI analytics platform.",
+        },
+        {
+          date: "2024-08-15",
+          title: "System Stabilization",
+          description: "The AI models began accurately predicting failure windows with 90% confidence, allowing for scheduled maintenance and avoiding emergency shutdowns.",
+        },
+      ],
+    },
+    ar: {
+      title: "الصيانة التنبؤية لإنترنت الأشياء الصناعي",
+      subtitle: "منع تعطل المعدات المكلف لمصنع صناعات ثقيلة من خلال نشر مستشعرات إنترنت الأشياء المتكاملة مع نماذج الصيانة التنبؤية بالذكاء الاصطناعي.",
+      tags: ["إنترنت الأشياء الصناعي", "الصيانة التنبؤية", "التصنيع", "الموثوقية"],
+      featured: true,
+      timeline: [
+        {
+          date: "2024-05-01",
+          title: "نشر شبكة المستشعرات",
+          description: "تركيب آلاف مستشعرات إنترنت الأشياء عبر الآلات الحيوية. إنشاء شبكة قوية لنقل البيانات إلى منصة تحليلات الذكاء الاصطناعي القائمة على السحابة.",
+        },
+        {
+          date: "2024-08-15",
+          title: "استقرار النظام",
+          description: "بدأت نماذج الذكاء الاصطناعي في التنبؤ بدقة بفترات الفشل بثقة 90%، مما سمح بالصيانة المجدولة وتجنب عمليات الإغلاق الطارئة.",
+        },
+      ],
+    },
+  },
 ];
 
 async function seedCaseStudies() {
@@ -326,13 +540,15 @@ async function seedCaseStudies() {
     const cs = caseStudies[csIndex];
 
     // Pick hero images for this case study (2 per case study)
+    // Use modulo to cycle through available hero images if there are more case studies than image pairs
     const heroImgs = [
-      uploadedHeroImages[csIndex * 2],
-      uploadedHeroImages[csIndex * 2 + 1],
+      uploadedHeroImages[(csIndex * 2) % uploadedHeroImages.length],
+      uploadedHeroImages[(csIndex * 2 + 1) % uploadedHeroImages.length],
     ];
 
     // Pick thumbnail for this case study
-    const thumbnail = uploadedThumbnails[csIndex];
+    // Use modulo to cycle through available thumbnails
+    const thumbnail = uploadedThumbnails[csIndex % uploadedThumbnails.length];
 
     // Build timeline entries with images (3 images per entry)
     function buildTimeline(

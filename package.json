@@ -6,7 +6,10 @@
     "dev": "sanity dev",
     "start": "sanity start",
     "build": "sanity build",
-    "deploy": "sanity deploy"
+    "deploy": "sanity deploy",
+    "seed:ui": "tsx scripts/seed-ui-translations.ts",
+    "seed:case-studies": "tsx scripts/seed-case-studies.ts",
+    "debug:path": "env | grep PATH"
   },
   "dependencies": {
     "@sanity/client": "^7.15.0",
