@@ -42,6 +42,11 @@ export default defineConfig({
                 S.documentTypeList("aboutPage").title("About Page")
               ),
             S.listItem()
+              .title("Legal Pages")
+              .child(
+                S.documentTypeList("legalPage").title("Legal Pages")
+              ),
+            S.listItem()
               .title("Services")
               .child(
                 S.documentTypeList("serviceDocument").title("Services")
@@ -83,6 +88,7 @@ export default defineConfig({
         "caseStudy",
         "homePage",
         "aboutPage",
+        "legalPage",
         "productDocument",
         "serviceDocument",
         "uiTranslations",

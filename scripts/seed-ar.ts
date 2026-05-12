@@ -30,8 +30,7 @@ async function seedArabic() {
         _type: "homePage",
         language: "ar",
         heroTitle: "حلول مدعومة بالذكاء الاصطناعي / للمؤسسات الحديثة",
-        heroSubtitle:
-            "حوّل أعمالك من خلال الأتمتة الذكية والأنظمة المفعّلة بالصوت ووكلاء الذكاء الاصطناعي التي تعزز الإنتاجية والابتكار",
+        heroSubtitle: "أتمتة ذكية ووكلاء ذكاء اصطناعي لتعزيز إنتاجية مؤسستك.",
         heroBadgePill: "حصري",
         heroBadgeDescription: "حافة الغد، بنيت اليوم",
 
@@ -46,7 +45,7 @@ async function seedArabic() {
                 title: "تكامل الذكاء الاصطناعي الوكيل",
                 description:
                     "دمج الوكلاء المستقلين بسلاسة في سير عملك لأتمتة عمليات اتخاذ القرارات المعقدة.",
-                image: "/bentogird/agenticai.svg",
+                image: "/bento-grid/ailab.svg",
             },
             {
                 _key: "svc-strategy",
@@ -54,7 +53,7 @@ async function seedArabic() {
                 title: "استراتيجية المؤسسات",
                 description:
                     "خرائط طريق ذكاء اصطناعي مخصصة مصممة لتتوافق مع أهداف عملك وتدفع التحول الرقمي طويل المدى.",
-                image: "/bentogird/enterprise.svg",
+                image: "/bento-grid/enterprise.svg",
             },
             {
                 _key: "svc-faas",
@@ -62,7 +61,7 @@ async function seedArabic() {
                 title: "بنية FaaS التحتية",
                 description:
                     "بنية تحتية مُدارة لإطار عمل وكلاء الذكاء الاصطناعي كخدمة، تضمن القابلية للتوسع والأداء الأمثل.",
-                image: "/bentogird/faas.svg",
+                image: "/bento-grid/faas.svg",
             },
             {
                 _key: "svc-tailored",
@@ -70,7 +69,7 @@ async function seedArabic() {
                 title: "حلول مخصصة",
                 description:
                     "أنظمة ذكاء اصطناعي مصممة خصيصاً لحل تحدياتك التشغيلية الفريدة واحتياجات صناعتك.",
-                image: "/bentogird/agenticai.svg",
+                image: "/bento-grid/ailab.svg",
             },
             {
                 _key: "svc-industry",
@@ -78,7 +77,7 @@ async function seedArabic() {
                 title: "التميز الصناعي",
                 description:
                     "الاستفادة من الخبرة المتخصصة في المجال لنشر حلول ذكاء اصطناعي تتجاوز معايير الصناعة للأمان والموثوقية.",
-                image: "/bentogird/faas.svg",
+                image: "/bento-grid/faas.svg",
             },
             {
                 _key: "svc-lab",
@@ -86,7 +85,7 @@ async function seedArabic() {
                 title: "مختبر الابتكار",
                 description:
                     "البحث المستمر والنمذجة السريعة لتقنيات الذكاء الاصطناعي المتطورة للحفاظ على تقدم مؤسستك.",
-                image: "/bentogird/ailab.svg",
+                image: "/bento-grid/ailab.svg",
             },
         ],
 
@@ -109,21 +108,21 @@ async function seedArabic() {
                 title: "ديمقراطية الذكاء",
                 description:
                     "جعل الذكاء الاصطناعي المتقدم بديهياً ومتاحاً من خلال الابتكار الصوتي أولاً.",
-                image: "/landing/m1.svg",
+                image: "/landing/m1.webp",
             },
             {
                 _key: "mis-2",
                 title: "تسريع الابتكار",
                 description:
                     "نشر الوكلاء المستقلين للقضاء على الاحتكاك وتسريع نمو الأعمال.",
-                image: "/landing/m2.svg",
+                image: "/landing/m2.webp",
             },
             {
                 _key: "mis-3",
                 title: "أنظمة بيئية موحدة",
                 description:
                     "ربط الأنظمة القديمة بالذكاء الاصطناعي المستقبلي لتطور مؤسسي سلس.",
-                image: "/landing/m3.svg",
+                image: "/landing/m3.webp",
             },
         ],
 
@@ -134,12 +133,12 @@ async function seedArabic() {
         technologyCards: [],
 
         partners: [
-            { _key: "p-1", logo: "/partners/EMp.svg", alt: "شريك ١" },
-            { _key: "p-2", logo: "/partners/EMp-1.svg", alt: "شريك ٢" },
-            { _key: "p-3", logo: "/partners/EMp-2-1.svg", alt: "شريك ٣" },
-            { _key: "p-4", logo: "/partners/EMp-3.svg", alt: "شريك ٤" },
-            { _key: "p-5", logo: "/partners/EMp-4.svg", alt: "شريك ٥" },
-            { _key: "p-6", logo: "/partners/EMp-5.svg", alt: "شريك ٦" },
+            { _key: "p-1", logo: "/partners/emp.svg", alt: "شريك ١" },
+            { _key: "p-2", logo: "/partners/emp-1.svg", alt: "شريك ٢" },
+            { _key: "p-3", logo: "/partners/emp-2.svg", alt: "شريك ٣" },
+            { _key: "p-4", logo: "/partners/emp-3.svg", alt: "شريك ٤" },
+            { _key: "p-5", logo: "/partners/emp-4.svg", alt: "شريك ٥" },
+            { _key: "p-6", logo: "/partners/emp-5.svg", alt: "شريك ٦" },
         ],
 
         ctaTitle: "مستعد لتحويل مؤسستك؟",
@@ -163,15 +162,16 @@ async function seedArabic() {
         heroTitlePart1: "",
         heroTitlePart2: "إرثنا",
         teamMembers: [
-            { _key: "tm-1", name: "أليكس مورغان", role: "الرئيس التنفيذي والمؤسس", bio: "قائد صاحب رؤية بخبرة تزيد عن 15 عاماً في الذكاء الاصطناعي والتخطيط الاستراتيجي.", image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop" },
-            { _key: "tm-2", name: "سارة تشن", role: "المدير التقني", bio: "خبيرة في التعلم الآلي والشبكات العصبية. تقود الرؤية التقنية وفرق الهندسة.", image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop" },
-            { _key: "tm-3", name: "ماركوس جونسون", role: "رئيس المنتجات", bio: "استراتيجي منتجات يركز على التصميم المتمحور حول المستخدم والحلول القابلة للتوسع.", image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=800&auto=format&fit=crop" },
-            { _key: "tm-4", name: "إيميلي رودريغيز", role: "كبيرة المصممين", bio: "مصممة حائزة على جوائز تبتكر واجهات بديهية وجميلة.", image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=800&auto=format&fit=crop" },
-            { _key: "tm-5", name: "ديفيد كيم", role: "مهندس ذكاء اصطناعي أول", bio: "متخصص في معالجة اللغات الطبيعية والنماذج اللغوية الكبيرة.", image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop" },
-            { _key: "tm-6", name: "ليزا وانغ", role: "مديرة التسويق", bio: "مسوّقة مبدعة متخصصة في الحملات الفيروسية وبناء العلامات التجارية.", image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop" },
-            { _key: "tm-7", name: "جيمس ويلسون", role: "مهندس DevOps", bio: "خبير بنية تحتية يضمن النشر السلس والتوافر العالي لأنظمة الذكاء الاصطناعي.", image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?q=80&w=800&auto=format&fit=crop" },
-            { _key: "tm-8", name: "روبرت تشن", role: "مطور واجهات أمامية", bio: "شغوف بإنشاء واجهات مستخدم متجاوبة وقابلة للوصول وعالية الأداء.", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop" },
-            { _key: "tm-9", name: "صوفيا مارتينيز", role: "باحثة في أخلاقيات الذكاء الاصطناعي", bio: "ملتزمة بضمان العدالة والشفافية والمساءلة في خوارزميات الذكاء الاصطناعي.", image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop" },
+            { _key: "tm-1", name: "بيكر أبو خاطر", role: "المؤسس", bio: "المؤسس الديناميكي والرؤيوي لـ ESAP AI، يقود مهمة بناء تقنيات مدعومة بالذكاء الاصطناعي تُعيد تعريف طريقة عمل المؤسسات والحكومات والأفراد.", image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop" },
+            { _key: "tm-2", name: "عايد العنزي", role: "مدير علاقات الموارد البشرية", bio: "مدير علاقات الموارد البشرية في ESAP AI، يعزز ثقافة التعاون والشمولية والتميز عبر الفريق متعدد الجنسيات واللغات.", image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop" },
+            { _key: "tm-3", name: "سيد إمام", role: "المؤسس المشارك وقائد الفريق", bio: "رائد في تطوير الذكاء الاصطناعي للمؤسسات والمؤسس المشارك لـ ESAP AI، يقود فرق الهندسة لتقديم حلول ذكاء اصطناعي قابلة للتوسع للمؤسسات حول العالم.", image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=800&auto=format&fit=crop" },
+            { _key: "tm-4", name: "م. عثمان نظير", role: "المؤسس المشارك ومدير الذكاء الاصطناعي", bio: "مدير حلول الذكاء الاصطناعي والبيانات في ESAP AI، يصمم الطبقة الذكية التي تُشغّل مجموعة منتجات ESAP وأطر العمل المدعومة بالذكاء الاصطناعي.", image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=800&auto=format&fit=crop" },
+            { _key: "tm-5", name: "عبدالله أبو خاطر", role: "مدير الابتكار الإبداعي", bio: "مدير الابتكار الإبداعي في ESAP AI، يمزج التفكير التصميمي مع التقنيات الناشئة لتشكيل تجارب جميلة وذكية في آنٍ واحد.", image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop" },
+            { _key: "tm-6", name: "عمر أبو خاطر", role: "مدير الاستراتيجية", bio: "مدير الاستراتيجية في ESAP AI، يرسم خارطة طريق النمو ودخول السوق لتعزيز مكانة ESAP كقوة رائدة في تحول المؤسسات بالذكاء الاصطناعي.", image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop" },
+            { _key: "tm-7", name: "علاء سعيد", role: "المدير المالي", bio: "المدير المالي في ESAP AI، يشرف على الاستراتيجية المالية والعمليات لضمان النمو المستدام والاستثمار في أبحاث الذكاء الاصطناعي المتطورة.", image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?q=80&w=800&auto=format&fit=crop" },
+            { _key: "tm-8", name: "حامد حسن", role: "قائد مهندسي البرمجيات الأول", bio: "قائد فريق هندسة البرمجيات الأول في ESAP AI، يوجه تطوير أنظمة قوية وعالية الأداء تدعم محفظة منتجات ESAP AI.", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop" },
+            { _key: "tm-9", name: "محمد مصطفى", role: "مهندس برمجيات رئيسي ومدير التسليم", bio: "مهندس برمجيات رئيسي ومدير تسليم في ESAP AI، يضمن إنجاز المشاريع في الوقت المحدد وبالجودة المطلوبة من خلال الربط بين التنفيذ التقني وتوافق أصحاب المصلحة.", image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop" },
+            { _key: "tm-10", name: "أسامة حسنين", role: "رئيس الواجهة الخلفية وهندسة الأنظمة", bio: "رئيس هندسة الواجهة الخلفية وهندسة الأنظمة في ESAP AI، يصمم البنية التحتية القابلة للتوسع والأنظمة الموزعة التي تُشغّل منصة ESAP للذكاء الاصطناعي.", image: "https://images.unsplash.com/photo-1463453091185-61582044d556?q=80&w=800&auto=format&fit=crop" },
         ],
         narrativeDesignation: "المسمى الوظيفي",
         teamCategoryLabel: "عضو الفريق الأساسي",
@@ -229,7 +229,7 @@ async function seedArabic() {
             architectureTitle: "عرض المعمارية",
             architectureBadge: "الفهرس المرئي",
             architectureSubtitle: "المعمارية — نظام ERP. تصور تفصيلي لمكونات محرك ERP المفعّل بالصوت.",
-            architectureReelImages: ["/productimages/Slide-22.png", "/productimages/Slide-23.png", "/productimages/Slide-24.png"],
+            architectureReelImages: ["/product-images/Slide-22.png", "/product-images/Slide-23.png", "/product-images/Slide-24.png"],
             ctaTitle: "مستعد لتجربة نظام ERP؟",
             ctaSubtitle: "أدر عملك بالكامل من خلال الأوامر الصوتية.",
             ctaButtonText: "ابدأ الآن",
@@ -260,7 +260,7 @@ async function seedArabic() {
             ],
             icon: "/products/erp.svg",
             heroSubtitle: ["نظام ERP مفعّل بالصوت للشركات الحديثة. أوامر صوتية للأعمال بالذكاء الاصطناعي."],
-            heroCenterIcon: "/products/voiceerp.svg",
+            heroCenterIcon: "/products/voiceerp.webp",
             heroCenterIconAlt: "أيقونة نظام ERP الصوتي",
             heroDemoVideo: "/fasih-demo.mp4",
             heroTagline: "الذكاء التشغيلي",
@@ -311,7 +311,7 @@ async function seedArabic() {
             architectureTitle: "عرض المعمارية",
             architectureBadge: "الفهرس المرئي",
             architectureSubtitle: "المعمارية — إطار عمل الذكاء الاصطناعي. تصور تفصيلي لمكونات محرك تنسيق الوكلاء.",
-            architectureReelImages: ["/productimages/Slide-22.png", "/productimages/Slide-23.png", "/productimages/Slide-24.png"],
+            architectureReelImages: ["/product-images/Slide-22.png", "/product-images/Slide-23.png", "/product-images/Slide-24.png"],
             ctaTitle: "مستعد لتجربة إطار عمل الذكاء الاصطناعي؟",
             ctaSubtitle: "بناء ونشر وكلاء الذكاء الاصطناعي على نطاق المؤسسات.",
             ctaButtonText: "ابدأ الآن",
@@ -393,7 +393,7 @@ async function seedArabic() {
             architectureTitle: "عرض المعمارية",
             architectureBadge: "الفهرس المرئي",
             architectureSubtitle: "المعمارية — ذاكرة. تصور تفصيلي لمكونات محرك تركيب المعرفة.",
-            architectureReelImages: ["/productimages/Slide-22.png", "/productimages/Slide-23.png", "/productimages/Slide-24.png"],
+            architectureReelImages: ["/product-images/Slide-22.png", "/product-images/Slide-23.png", "/product-images/Slide-24.png"],
             ctaTitle: "مستعد لتجربة ذاكرة؟",
             ctaSubtitle: "أطلق إجابات فورية ومدركة للسياق من قاعدة معارفك.",
             ctaButtonText: "ابدأ الآن",
@@ -475,7 +475,7 @@ async function seedArabic() {
             architectureTitle: "عرض المعمارية",
             architectureBadge: "الفهرس المرئي",
             architectureSubtitle: "المعمارية — جويب. تصور تفصيلي لمكونات محرك أتمتة خدمة العملاء.",
-            architectureReelImages: ["/productimages/Slide-22.png", "/productimages/Slide-23.png", "/productimages/Slide-24.png"],
+            architectureReelImages: ["/product-images/Slide-22.png", "/product-images/Slide-23.png", "/product-images/Slide-24.png"],
             ctaTitle: "مستعد لتجربة جويب؟",
             ctaSubtitle: "حوّل خدمة عملائك بدعم الذكاء الاصطناعي على مدار الساعة.",
             ctaButtonText: "ابدأ الآن",
@@ -557,7 +557,7 @@ async function seedArabic() {
             architectureTitle: "عرض المعمارية",
             architectureBadge: "الفهرس المرئي",
             architectureSubtitle: "المعمارية — فصيح. تصور تفصيلي لمكونات النموذج اللغوي العربي الأصلي.",
-            architectureReelImages: ["/productimages/Slide-22.png", "/productimages/Slide-23.png", "/productimages/Slide-24.png"],
+            architectureReelImages: ["/product-images/Slide-22.png", "/product-images/Slide-23.png", "/product-images/Slide-24.png"],
             ctaTitle: "مستعد لتجربة فصيح؟",
             ctaSubtitle: "جرّب فهم اللغة العربية الأصيل.",
             ctaButtonText: "ابدأ الآن",
@@ -588,7 +588,7 @@ async function seedArabic() {
             ],
             icon: "/products/fasih.svg",
             heroSubtitle: ["ذكاء اصطناعي عربي أصلي. مبني لفهم العربية."],
-            heroCenterIcon: "/products/fasih.svg",
+            heroCenterIcon: "/products/fasih.webp",
             heroCenterIconAlt: "أيقونة النموذج اللغوي العربي فصيح",
             heroDemoVideo: "/fasih-demo.mp4",
             heroTagline: "الفروق الثقافية",

@@ -193,6 +193,33 @@ export default defineType({
             description: 'Title for before/after section (e.g. "See the difference")',
         }),
 
+        // ── Menu / Dropdown ──
+        defineField({
+            name: "menuDescription",
+            title: "Menu Description",
+            type: "text",
+            rows: 2,
+            description: "Short description shown in the navigation dropdown panel",
+        }),
+        defineField({
+            name: "performanceMetrics",
+            title: "Performance Metrics",
+            type: "array",
+            description: "Impact stats shown in the navigation dropdown (e.g. 60% / Faster Deployment)",
+            of: [
+                {
+                    type: "object",
+                    fields: [
+                        defineField({ name: "value", title: "Value", type: "string" }),
+                        defineField({ name: "label", title: "Label", type: "string" }),
+                    ],
+                    preview: {
+                        select: { title: "value", subtitle: "label" },
+                    },
+                },
+            ],
+        }),
+
         // ── CTA Section ──
         defineField({
             name: "ctaTitle",
