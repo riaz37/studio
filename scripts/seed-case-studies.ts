@@ -26,49 +26,28 @@ const client = createClient({
   token: process.env.SANITY_API_TOKEN,
   apiVersion: "2024-02-25",
 });
-// ── Placeholder image URLs (Unsplash) ──
+const S = [
+  "https://esap.ai/product-images/Slide-22.webp",
+  "https://esap.ai/product-images/Slide-23.webp",
+  "https://esap.ai/product-images/Slide-24.webp",
+];
+// ── Placeholder image URLs ──
 const IMAGES = {
   // Hero images (2 per case study)
   hero: [
-    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200",
-    "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1200",
-    "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1200",
-    "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200",
-    "https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=1200",
-    "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=1200",
-    "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200",
-    "https://images.unsplash.com/photo-1504384308090-c894fdcc518d?w=1200",
-    "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1200",
-    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200",
-    "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200",
-    "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1200",
-    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200",
-    "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=1200",
-    "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=1200",
-    "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200",
+    S[0], S[1], S[2], S[0], S[1], S[2],
+    S[0], S[1], S[2], S[0], S[1], S[2],
+    S[0], S[1], S[2], S[0],
   ],
-  // Timeline images (3 per timeline entry)
+  // Timeline images
   timeline: [
-    "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800",
-    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800",
-    "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800",
-    "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=800",
-    "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800",
-    "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800",
-    "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800",
-    "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800",
-    "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800",
+    S[0], S[1], S[2], S[0], S[1], S[2],
+    S[0], S[1], S[2],
   ],
   // Thumbnails
   thumbnails: [
-    "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200",
-    "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200",
-    "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1200",
-    "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200",
-    "https://images.unsplash.com/photo-1573164713988-8665fc963095?w=1200",
-    "https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=1200",
-    "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1200",
-    "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=1200",
+    S[0], S[1], S[2], S[0], S[1], S[2],
+    S[0], S[1],
   ],
 };
 
@@ -90,8 +69,8 @@ async function uploadImage(
   }
   const buffer = Buffer.from(await response.arrayBuffer());
   const asset = await client.assets.upload("image", buffer, {
-    filename: `case-study-${Date.now()}.jpg`,
-    contentType: "image/jpeg",
+    filename: `case-study-${Date.now()}.webp`,
+    contentType: "image/webp",
   });
 
   return {
