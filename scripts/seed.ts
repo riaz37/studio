@@ -286,10 +286,10 @@ async function deleteLegacyServiceDocuments() {
     }
 }
 
-const productsEn = [
+const productsEn: Array<{ _id: string; name: string; [key: string]: unknown }> = [
     {
         _id: "product-erp",
-        orderRank: 1,
+        orderRank: 4,
         name: "ERP",
         slug: { _type: "slug", current: "erp" },
         description: "Voice-activated ERP system for SMEs. Manage your entire business operation through natural voice commands with AI-powered automation.",
@@ -300,6 +300,7 @@ const productsEn = [
         heroCenterIconAlt: "Voice ERP System Icon",
         heroDemoVideo: "/fasih-demo.mp4",
         heroTagline: "Operational Intelligence",
+        heroLiveUrl: undefined,
         exploreButton: "Explore Solution",
         missionTitle: "Voice-First Enterprise Operations",
         missionSubtitle: "Manage your entire business operations through natural voice commands while ensuring security and compliance.",
@@ -371,7 +372,7 @@ const productsEn = [
     },
     {
         _id: "product-ai-framework",
-        orderRank: 2,
+        orderRank: 5,
         name: "AI Framework",
         slug: { _type: "slug", current: "ai-framework" },
         description: "A comprehensive AI Agent & Automation Framework designed to build, deploy, and scale intelligent enterprise solutions at unprecedented speed.",
@@ -382,6 +383,7 @@ const productsEn = [
         heroCenterIconAlt: "AI Framework Icon",
         heroDemoVideo: "/fasih-demo.mp4",
         heroTagline: "Agent Orchestration",
+        heroLiveUrl: undefined,
         exploreButton: "Explore Solution",
         missionTitle: "Decentralized Intelligence Network",
         missionSubtitle: "Build and deploy AI agents rapidly at enterprise scale with industry-standard reliability.",
@@ -453,7 +455,7 @@ const productsEn = [
     },
     {
         _id: "product-zakra",
-        orderRank: 3,
+        orderRank: 1,
         name: "Zakra",
         slug: { _type: "slug", current: "zakra" },
         description: "Smart Knowledge Agent that delivers instant, context-aware answers from your entire knowledge base. Unlock the power of your enterprise data.",
@@ -536,7 +538,7 @@ const productsEn = [
     },
     {
         _id: "product-pagesense",
-        orderRank: 4,
+        orderRank: 2,
         name: "PageSense",
         slug: { _type: "slug", current: "pagesense" },
         description: "Upload Arabic and English documents once. Ask questions. Get cited answers instantly.",
@@ -619,7 +621,7 @@ const productsEn = [
     },
     {
         _id: "product-omnilisten",
-        orderRank: 5,
+        orderRank: 3,
         name: "OmniListen",
         slug: { _type: "slug", current: "omnilisten" },
         description: "Every Arabic and English conversation transcribed, summarized, and actioned before you leave the room.",

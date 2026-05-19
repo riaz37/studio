@@ -212,7 +212,7 @@ async function seedArabic() {
     });
 
     // ── PRODUCTS ──
-    const productsAr = [
+    const productsAr: Array<{ _id: string; name: string; [key: string]: unknown }> = [
         {
             _id: "product-erp-ar",
             orderRank: 1,
@@ -264,6 +264,7 @@ async function seedArabic() {
             heroCenterIconAlt: "أيقونة نظام ERP الصوتي",
             heroDemoVideo: "/fasih-demo.mp4",
             heroTagline: "الذكاء التشغيلي",
+            heroLiveUrl: undefined,
             missionTitle: "عمليات المؤسسة الصوتية",
             missionSubtitle: "أدر عمليات أعمالك بالكامل من خلال الأوامر الصوتية الطبيعية مع ضمان الأمان.",
             missionCards: [
@@ -346,6 +347,7 @@ async function seedArabic() {
             heroCenterIconAlt: "أيقونة إطار عمل الذكاء الاصطناعي",
             heroDemoVideo: "/fasih-demo.mp4",
             heroTagline: "تنسيق الوكلاء",
+            heroLiveUrl: undefined,
             missionTitle: "شبكة الذكاء اللامركزي",
             missionSubtitle: "بناء ونشر وكلاء الذكاء الاصطناعي بسرعة على نطاق المؤسسات بموثوقية معيارية.",
             missionCards: [
