@@ -86,6 +86,12 @@ export default defineType({
             title: "Hero Tagline",
             type: "string",
         }),
+        defineField({
+            name: "heroLiveUrl",
+            title: "Hero Live URL",
+            type: "url",
+            description: 'External product URL, e.g. https://zakra.esap.ai — overrides the contact page link on the hero CTA button',
+        }),
 
         // ── Mission Section ──
         defineField({
